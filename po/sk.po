@@ -1,140 +1,139 @@
-# Danish translation adduser.
-# Copyright (C) 2010 adduser & nedenstående oversættere.
-# This file is distributed under the same license as adduser package.
-# Morten Brix Pedersen <morten@wtf.dk>, 2001-2004.
-# Joe Hansen <joedalton2@yahoo.dk>, 2010.
+# Slovak (sk) translation of adduser
+# Ivan Masár <helix84@centrum.sk>, 2007, 2010.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser\n"
+"Project-Id-Version: adduser 3.112\n"
 "Report-Msgid-Bugs-To: adduser-devel@lists.alioth.debian.org\n"
 "POT-Creation-Date: 2010-11-21 17:13-0400\n"
-"PO-Revision-Date: 2010-11-14 17:30+01:00\n"
-"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
-"Language-Team: Danish <dansk@dansk-gruppen.dk>\n"
-"Language: da\n"
+"PO-Revision-Date: 2010-11-07 21:47+0100\n"
+"Last-Translator: Ivan Masár <helix84@centrum.sk>\n"
+"Language-Team: Slovak <sk-i18n@lists.linux.sk>\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. everyone can issue "--help" and "--version", but only root can go on
 #: ../adduser:150
 msgid "Only root may add a user or group to the system.\n"
-msgstr "Kun root må tilføje en bruger eller gruppe til systemet.\n"
+msgstr "Iba root môže pridať používateľa alebo skupinu do systému.\n"
 
 #: ../adduser:176 ../deluser:137
 msgid "Only one or two names allowed.\n"
-msgstr "Kun et eller to navne er tilladt.\n"
+msgstr "Sú povolené iba jedno alebo dve mená.\n"
 
 #. must be addusertogroup
 #: ../adduser:181
 msgid "Specify only one name in this mode.\n"
-msgstr "Specificer kun et navn i denne tilstand.\n"
+msgstr "V tomto režime uveďte iba jedno meno.\n"
 
 #: ../adduser:197
 msgid "The --group, --ingroup, and --gid options are mutually exclusive.\n"
-msgstr "--group, --ingroup og --gid kan ikke bruges sammen.\n"
+msgstr "Voľby --group, --ingroup a --gid sa vzájomne vylučujú.\n"
 
 #: ../adduser:202
 msgid "The home dir must be an absolute path.\n"
-msgstr "Hjemmemappen skal være en absolut sti.\n"
+msgstr "Domovský adresár musí byť absolútna cesta.\n"
 
 #: ../adduser:206
 #, perl-format
 msgid "Warning: The home dir %s you specified already exists.\n"
-msgstr "Advarsel: Den hjemmemappe %s du angav findes allerede.\n"
+msgstr "Upozornenie: Domovský adresár %s, ktorý ste uviedli, už existuje.\n"
 
 #: ../adduser:208
 #, perl-format
 msgid "Warning: The home dir %s you specified can't be accessed: %s\n"
-msgstr "Advarsel: Den hjemmemappe %s du angav kan ikke tilgås: %s\n"
+msgstr ""
+"Upozornenie: Do domovského adresára %s, ktorý ste uviedli, nie je možné "
+"pristupovať: %s.\n"
 
 #: ../adduser:270
 #, perl-format
 msgid "The group `%s' already exists as a system group. Exiting.\n"
-msgstr "Gruppen »%s« findes allerede som en systemgruppe. Afslutter.\n"
+msgstr "Skupina „%s“ už existuje ako systémová skupina. Koniec.\n"
 
 #: ../adduser:276
 #, perl-format
 msgid "The group `%s' already exists and is not a system group. Exiting.\n"
-msgstr "Gruppen »%s« findes allerede og er ikke en systemgruppe. Afslutter.\n"
+msgstr "Skupina „%s“ už existuje a nie je systémová skupina. Koniec.\n"
 
 #: ../adduser:282
 #, perl-format
 msgid "The group `%s' already exists, but has a different GID. Exiting.\n"
-msgstr "Brugeren »%s« findes allerede, men har en anderledes GID. Afslutter.\n"
+msgstr "Skupina „%s“ už existuje, ale má odlišný GID. Koniec.\n"
 
 #: ../adduser:286 ../adduser:316
 #, perl-format
 msgid "The GID `%s' is already in use.\n"
-msgstr "GID'et »%s« er allerede i brug.\n"
+msgstr "GID „%s“ sa už používa.\n"
 
 #: ../adduser:294
 #, perl-format
 msgid ""
 "No GID is available in the range %d-%d (FIRST_SYS_GID - LAST_SYS_GID).\n"
 msgstr ""
-"Intet GID er ledigt i intervallet %d-%d (FIRST_SYS_GID - LAST_SYS_GID).\n"
+"Nie je dostupný žiadny GID v rozsahu %d-%d (FIRST_SYS_GID - LAST_SYS_GID).\n"
 
 #: ../adduser:295 ../adduser:325
 #, perl-format
 msgid "The group `%s' was not created.\n"
-msgstr "Gruppe »%s« ikke tilføjet.\n"
+msgstr "Skupina „%s“ nebola vytvorená.\n"
 
 #: ../adduser:300 ../adduser:329
 #, perl-format
 msgid "Adding group `%s' (GID %d) ...\n"
-msgstr "Tilføjer gruppe »%s« (GID %d)...\n"
+msgstr "Pridáva sa skupina „%s“ (GID %d)...\n"
 
 #: ../adduser:305 ../adduser:334 ../adduser:359 ../deluser:370 ../deluser:407
 #: ../deluser:444
 msgid "Done.\n"
-msgstr "Færdig.\n"
+msgstr "Hotovo.\n"
 
 #: ../adduser:314 ../adduser:792
 #, perl-format
 msgid "The group `%s' already exists.\n"
-msgstr "Gruppen »%s« findes allerede.\n"
+msgstr "Skupina „%s“ už existuje.\n"
 
 #: ../adduser:324
 #, perl-format
 msgid "No GID is available in the range %d-%d (FIRST_GID - LAST_GID).\n"
-msgstr "Intet GID er ledigt i intervallet %d-%d (FIRST_GID - LAST_GID).\n"
+msgstr "Nie je dostupný žiadny GID v rozsahu %d-%d (FIRST_GID - LAST_GID).\n"
 
 #: ../adduser:343 ../deluser:229 ../deluser:416
 #, perl-format
 msgid "The user `%s' does not exist.\n"
-msgstr "Brugeren »%s« findes ikke.\n"
+msgstr "Používateľ „%s“ neexistuje.\n"
 
 #: ../adduser:345 ../adduser:591 ../adduser:799 ../deluser:378 ../deluser:419
 #, perl-format
 msgid "The group `%s' does not exist.\n"
-msgstr "Gruppen »%s« findes ikke.\n"
+msgstr "Skupina „%s“ neexistuje.\n"
 
 #: ../adduser:348 ../adduser:595
 #, perl-format
 msgid "The user `%s' is already a member of `%s'.\n"
-msgstr "Brugeren »%s« er allerede et medlem af »%s«.\n"
+msgstr "Používateľ „%s“ už je členom „%s“ .\n"
 
 #: ../adduser:353 ../adduser:601
 #, perl-format
 msgid "Adding user `%s' to group `%s' ...\n"
-msgstr "Tilføjer bruger »%s« til gruppen »%s«...\n"
+msgstr "Pridáva sa používateľ „%s“ do skupiny „%s“...\n"
 
 #: ../adduser:373
 #, perl-format
 msgid "The system user `%s' already exists. Exiting.\n"
-msgstr "Systembrugeren »%s« findes allerede. Afslutter.\n"
+msgstr "Systémový používateľ „%s“ už existuje. Koniec.\n"
 
 #: ../adduser:376
 #, perl-format
 msgid "The user `%s' already exists. Exiting.\n"
-msgstr "Brugeren »%s« findes allerede. Afslutter.\n"
+msgstr "Používateľ „%s“ už existuje. Koniec.\n"
 
 #: ../adduser:380
 #, perl-format
 msgid "The user `%s' already exists with a different UID. Exiting.\n"
-msgstr "Brugeren »%s« findes allerede med en anden UID. Afslutter.\n"
+msgstr "Používateľ „%s“ už existuje s odlišným UID. Koniec.\n"
 
 #: ../adduser:394
 #, perl-format
@@ -142,48 +141,49 @@ msgid ""
 "No UID/GID pair is available in the range %d-%d (FIRST_SYS_UID - "
 "LAST_SYS_UID).\n"
 msgstr ""
-"Intet UID-/GID-par er ledigt i intervallet %d-%d (FIRST_SYS_UID - "
-"LAST_SYS_UID).\n"
+"Nie je dostupný žiadny UID/GID pár v rozsahu %d-%d (FIRST_SYS_GID - "
+"LAST_SYS_GID).\n"
 
 #: ../adduser:395 ../adduser:407 ../adduser:487 ../adduser:499
 #, perl-format
 msgid "The user `%s' was not created.\n"
-msgstr "Bruger »%s« blev ikke tilføjet.\n"
+msgstr "Používateľ „%s“ nebol vytvorený.\n"
 
 #: ../adduser:406
 #, perl-format
 msgid ""
 "No UID is available in the range %d-%d (FIRST_SYS_UID - LAST_SYS_UID).\n"
-msgstr "Intet UID ledigt i intervallet %d-%d (FIRST_SYS_UID - LAST_SYS_UID).\n"
+msgstr ""
+"Nie je dostupný žiadny UID v rozsahu %d-%d (FIRST_SYS_UID - LAST_SYS_UID).\n"
 
 #: ../adduser:411 ../adduser:417 ../adduser:503 ../adduser:509
 msgid "Internal error"
-msgstr "Intern fejl"
+msgstr "Vnútorná chyba"
 
 #: ../adduser:419
 #, perl-format
 msgid "Adding system user `%s' (UID %d) ...\n"
-msgstr "Tilføjer systembruger »%s« (UID %d)...\n"
+msgstr "Pridáva sa systémový používateľ „%s“ (UID %d)...\n"
 
 #: ../adduser:424
 #, perl-format
 msgid "Adding new group `%s' (GID %d) ...\n"
-msgstr "Tilføjer ny gruppe »%s« (GID %d)...\n"
+msgstr "Pridáva sa nová skupina „%s“ (GID %d)...\n"
 
 #: ../adduser:431
 #, perl-format
 msgid "Adding new user `%s' (UID %d) with group `%s' ...\n"
-msgstr "Tilføjer ny bruger »%s« (UID %d) med gruppe »%s«...\n"
+msgstr "Pridáva sa nový používateľ „%s“ (UID %d) so skupinou „%s“...\n"
 
 #: ../adduser:449 ../AdduserCommon.pm:162
 #, perl-format
 msgid "`%s' returned error code %d. Exiting.\n"
-msgstr "»%s« returnerede fejlkode %d. Afslutter.\n"
+msgstr "„%s“ vrátil chybový kód %d. Koniec.\n"
 
 #: ../adduser:451 ../AdduserCommon.pm:164
 #, perl-format
 msgid "`%s' exited from signal %d. Exiting.\n"
-msgstr "»%s« afsluttede fra signal %d. Afslutter.\n"
+msgstr "„%s“ skončil na signál %d. Koniec.\n"
 
 #: ../adduser:453
 #, perl-format
@@ -191,94 +191,94 @@ msgid ""
 "%s failed with return code 15, shadow not enabled, password aging cannot be "
 "set. Continuing.\n"
 msgstr ""
-"%s fejlede med returkode 15, skygge ikke aktiveret, adgangskodeforfald kan "
-"ikke angives. Fortsætter.\n"
+"„%s“ zlyhal s chybovým kódom 15, shadow nie je zapnutý, nie je možné "
+"nastaviť starnutie hesiel. Pokračujem.\n"
 
 #: ../adduser:478
 #, perl-format
 msgid "Adding user `%s' ...\n"
-msgstr "Tilføjer bruger »%s«...\n"
+msgstr "Pridáva sa používateľ „%s“...\n"
 
 #: ../adduser:486
 #, perl-format
 msgid ""
 "No UID/GID pair is available in the range %d-%d (FIRST_UID - LAST_UID).\n"
 msgstr ""
-"Intet UID-/GID-par er ledigt i intervallet %d-%d (FIRST_UID - LAST_UID).\n"
+"Nie je dostupný žiadny UID/GID pár v rozsahu %d-%d (FIRST_UID - LAST_UID).\n"
 
 #: ../adduser:498
 #, perl-format
 msgid "No UID is available in the range %d-%d (FIRST_UID - LAST_UID).\n"
-msgstr "Intet UID ledigt i intervallet %d-%d (FIRST_UID - LAST_UID).\n"
+msgstr "Nie je dostupný žiadny UID v rozsahu %d-%d (FIRST_UID - LAST_UID).\n"
 
 #: ../adduser:514
 #, perl-format
 msgid "Adding new group `%s' (%d) ...\n"
-msgstr "Tilføjer ny gruppe »%s« (%d)...\n"
+msgstr "Pridáva sa nová skupina „%s“ (%d)...\n"
 
 #: ../adduser:521
 #, perl-format
 msgid "Adding new user `%s' (%d) with group `%s' ...\n"
-msgstr "Tilføjer ny bruger »%s« (%d) med gruppe »%s«...\n"
+msgstr "Pridáva sa nový používateľ „%s“ (%d) so skupinou „%s“...\n"
 
 #. hm, error, should we break now?
 #: ../adduser:545
 msgid "Permission denied\n"
-msgstr "Tilladelse nægtet\n"
+msgstr "Oprávnenie zamietnuté\n"
 
 #: ../adduser:546
 msgid "invalid combination of options\n"
-msgstr "ugyldig kombination af tilvalg\n"
+msgstr "neplatná kombinácia volieb\n"
 
 #: ../adduser:547
 msgid "unexpected failure, nothing done\n"
-msgstr "uventet fejl, intet gjort\n"
+msgstr "neočakávané zlyhanie, nerobím nič\n"
 
 #: ../adduser:548
 msgid "unexpected failure, passwd file missing\n"
-msgstr "uventet fejl, adgangskodefil mangler\n"
+msgstr "neočakávané zlyhanie, chýba súbor passwd\n"
 
 #: ../adduser:549
 msgid "passwd file busy, try again\n"
-msgstr "adgangskodefil optaget, forsøg igen\n"
+msgstr "súbor passwd sa používa, skúste znova\n"
 
 #: ../adduser:550
 msgid "invalid argument to option\n"
-msgstr "ugyldigt argument for tilvalg\n"
+msgstr "neplatný argument voľby\n"
 
 #. Translators: [y/N] has to be replaced by values defined in your
 #. locale.  You can see by running "locale noexpr" which regular
 #. expression will be checked to find positive answer.
 #: ../adduser:555
 msgid "Try again? [y/N] "
-msgstr "Forsøg igen? [j/N] "
+msgstr "Skúsiť znova? [á/N] "
 
 #. Translators: [y/N] has to be replaced by values defined in your
 #. locale.  You can see by running "locale yesexpr" which regular
 #. expression will be checked to find positive answer.
 #: ../adduser:581
 msgid "Is the information correct? [Y/n] "
-msgstr "Er informationerne korrekte? [J/n] "
+msgstr "Sú tieto informácie správne? [Á/n] "
 
 #: ../adduser:588
 #, perl-format
 msgid "Adding new user `%s' to extra groups ...\n"
-msgstr "Tilføjer ny bruger »%s« til ekstra grupper...\n"
+msgstr "Pridáva sa nový používateľ „%s“ do ďalších skupín...\n"
 
 #: ../adduser:614
 #, perl-format
 msgid "Setting quota for user `%s' to values of user `%s' ...\n"
-msgstr "Angiver kvota for bruger »%s« til værdier af bruger »%s«...\n"
+msgstr "Nastavuje sa kvóta používateľa „%s“ na hodnoty používateľa „%s“...\n"
 
 #: ../adduser:651
 #, perl-format
 msgid "Not creating home directory `%s'.\n"
-msgstr "Opretter ikke hjemmemappe »%s«.\n"
+msgstr "Nevytvára sa domovský adresár „%s“.\n"
 
 #: ../adduser:654
 #, perl-format
 msgid "The home directory `%s' already exists.  Not copying from `%s'.\n"
-msgstr "Hjemmemappen »%s« findes allerede. Kopierer ikke fra »%s«.\n"
+msgstr "Domovský adresár „%s“ už existuje. Nekopíruje sa z „%s“.\n"
 
 #: ../adduser:660
 #, perl-format
@@ -286,52 +286,53 @@ msgid ""
 "Warning: The home directory `%s' does not belong to the user you are "
 "currently creating.\n"
 msgstr ""
-"Advarsel: Hjemmemappen »%s« tilhører ikke brugeren, du er ved at oprette.\n"
+"Upozornenie: Domovský adresár „%s“ nepatrí používateľovi, ktorého práve "
+"vytvárate.\n"
 
 #: ../adduser:665
 #, perl-format
 msgid "Creating home directory `%s' ...\n"
-msgstr "Opretter hjemmemappe »%s«...\n"
+msgstr "Vytvára sa domovský adresár „%s“...\n"
 
 #: ../adduser:667
 #, perl-format
 msgid "Couldn't create home directory `%s': %s.\n"
-msgstr "Kunne ikke oprette hjemmemappe »%s«: %s.\n"
+msgstr "Nebolo možné vytvoriť domovský adresár „%s“: %s.\n"
 
 #: ../adduser:675
 #, perl-format
 msgid "Copying files from `%s' ...\n"
-msgstr "Kopierer filer fra »%s«...\n"
+msgstr "Kopírujú sa súbory z „%s“...\n"
 
 #: ../adduser:677
 #, perl-format
 msgid "fork for `find' failed: %s\n"
-msgstr "forgrening for »find« mislykkedes: %s\n"
+msgstr "fork príkazu „find“ zlyhal: %s\n"
 
 #: ../adduser:782
 #, perl-format
 msgid "The user `%s' already exists, and is not a system user.\n"
-msgstr "Brugeren »%s« findes allerede, og er ikke en systembruger.\n"
+msgstr "Používateľ „%s“ už existuje a nie je systémový používateľ.\n"
 
 #: ../adduser:784
 #, perl-format
 msgid "The user `%s' already exists.\n"
-msgstr "Brugeren »%s« findes allerede.\n"
+msgstr "Používateľ „%s“ už existuje.\n"
 
 #: ../adduser:787
 #, perl-format
 msgid "The UID %d is already in use.\n"
-msgstr "GID'et %d er allerede i brug.\n"
+msgstr "UID %d sa už používa.\n"
 
 #: ../adduser:794
 #, perl-format
 msgid "The GID %d is already in use.\n"
-msgstr "GID'et %d er allerede i brug.\n"
+msgstr "GID %d sa už používa.\n"
 
 #: ../adduser:801
 #, perl-format
 msgid "The GID %d does not exist.\n"
-msgstr "GID %d findes ikke.\n"
+msgstr "GID %d neexistuje.\n"
 
 #: ../adduser:848
 #, perl-format
@@ -339,8 +340,8 @@ msgid ""
 "Cannot deal with %s.\n"
 "It is not a dir, file, or symlink.\n"
 msgstr ""
-"Kan ikke håndtere %s.\n"
-"Det er ikke en mappe, fil eller symbolsk henvisning.\n"
+"Nevieme si poradiť s %s.\n"
+"Nie je to adresár, súbor ani symbolický odkaz.\n"
 
 #: ../adduser:868
 #, perl-format
@@ -351,15 +352,16 @@ msgid ""
 "a dash (as defined by IEEE Std 1003.1-2001). For compatibility with Samba\n"
 "machine accounts $ is also supported at the end of the username\n"
 msgstr ""
-"%s: For at undgå problemer, bør brugernavnet bestå af bogstaver, tal,\n"
-"understregninger, punktummer og skråstreger, og ikke starte med en "
-"skråstreg\n"
-"(som defineret af IEEE Std 1003.1-2001). For kompatibilitet med\n"
-"Sambamaskinkonti er $ også understøttet i slutningen af brugernavnet\n"
+"%s: Aby ste sa vyhli problémom, používateľské meno by malo pozostávať\n"
+"iba z písmen, číslic, podčiarkovníka, bodky, znaku at a spojovníka a "
+"nezačínať\n"
+"spojovníkom (podľa definície IEEE Std 1003.1-2001). Pre kompatibilitu s "
+"účtami\n"
+"stroja Samba sa tiež podporuje $ na konci používateľského mena\n"
 
 #: ../adduser:876
 msgid "Allowing use of questionable username.\n"
-msgstr "Tillader brug af tvivlsomt brugernavn.\n"
+msgstr "Povoľuje sa použitie pochybného používateľského mena.\n"
 
 #: ../adduser:880
 #, perl-format
@@ -368,46 +370,46 @@ msgid ""
 "via the NAME_REGEX configuration variable.  Use the `--force-badname'\n"
 "option to relax this check or reconfigure NAME_REGEX.\n"
 msgstr ""
-"%s: Indtast venligst et brugernavn der matcher det regulære udtryk\n"
-"konfigureret via konfigurationsvariablen NAME_REGEX. Brug tilvalget\n"
-"»--force-badname« til at slække dette tjek eller rekonfigurer NAME_REGEX.\n"
+"%s: Prosím zadajte meno používateľa zodpovedajúce regulárnemu výrazu\n"
+"nastavenému premennou NAME_REGEX. Pomocou voľby „--force-badname“\n"
+"je možné relaxovať túto kontrolu alebo rekonfigurovať NAME_REGEX.\n"
 
 #: ../adduser:896
 #, perl-format
 msgid "Selecting UID from range %d to %d ...\n"
-msgstr "Vælger UID fra intervallet %d til %d...\n"
+msgstr "Vyberá sa UID z rozsahu %d až %d...\n"
 
 #: ../adduser:914
 #, perl-format
 msgid "Selecting GID from range %d to %d ...\n"
-msgstr "Vælger GID fra intervallet %d til %d...\n"
+msgstr "Vyberá sa GID z rozsahu %d až %d...\n"
 
 #: ../adduser:958
 #, perl-format
 msgid "Stopped: %s\n"
-msgstr "Stoppet: %s\n"
+msgstr "Zastavené: %s\n"
 
 #: ../adduser:960
 #, perl-format
 msgid "Removing directory `%s' ...\n"
-msgstr "Fjerner mappe »%s«...\n"
+msgstr "Odstraňuje sa adresár „%s“...\n"
 
 #: ../adduser:964 ../deluser:358
 #, perl-format
 msgid "Removing user `%s' ...\n"
-msgstr "Fjerner bruger »%s«...\n"
+msgstr "Odstraňuje sa používateľ „%s“...\n"
 
 #: ../adduser:968 ../deluser:403
 #, perl-format
 msgid "Removing group `%s' ...\n"
-msgstr "Fjerner gruppe »%s«...\n"
+msgstr "Odstraňuje sa skupina „%s“...\n"
 
 #. Translators: the variable %s is INT, QUIT, or HUP.
 #. Please do not insert a space character between SIG and %s.
 #: ../adduser:979
 #, perl-format
 msgid "Caught a SIG%s.\n"
-msgstr "Fangede et SIG%s.\n"
+msgstr "Zachytený SIG%s.\n"
 
 #: ../adduser:984
 #, perl-format
@@ -415,7 +417,7 @@ msgid ""
 "adduser version %s\n"
 "\n"
 msgstr ""
-"adduser version %s\n"
+"adduser verzia %s\n"
 "\n"
 
 #: ../adduser:985
@@ -427,11 +429,11 @@ msgid ""
 "                   Ted Hajek <tedhajek@boombox.micro.umn.edu>\n"
 "\n"
 msgstr ""
-"Tilføjer en bruger eller gruppe til systemet.\n"
+"Pridáva používateľov alebo skupiny do systému.\n"
 "  \n"
-"Ophavsret 1997, 1998, 1999 Guy Maor <maor@debian.org>\n"
-"Ophavsret 1995 Ian Murdock <imurdock@gnu.ai.mit.edu>,\n"
-"               Ted Hajek <tedhajek@boombox.micro.umn.edu>\n"
+"Copyright (C) 1997, 1998, 1999 Guy Maor <maor@debian.org>\n"
+"Copyright (C) 1995 Ian Murdock <imurdock@gnu.ai.mit.edu>,\n"
+"                   Ted Hajek <tedhajek@boombox.micro.umn.edu>\n"
 "\n"
 
 #: ../adduser:992 ../deluser:466
@@ -446,16 +448,15 @@ msgid ""
 "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n"
 "General Public License, /usr/share/common-licenses/GPL, for more details.\n"
 msgstr ""
-"Dette program er fri software. Du kan redistribuere og/eller modificere\n"
-"det under de betingelser som er angivet i GNU General Public License, som\n"
-"udgivet af Free Software Foundation. Enten version 2 af licensen eller\n"
-"(efter eget valg) enhver senere version.\n"
+"Tento program je slobodný softvér; môžete ho šíriť a/alebo meniť\n"
+"za podmienok GNU General Public License (GNU GPL), ktorú publikovala\n"
+"Free Software Foundation; buď verzie 2 alebo (podľa vašej voľby)\n"
+"ktorejkoľvek novšej verzie.\n"
 "\n"
-"Dette program distribueres i håb om at det vil vise sig nyttigt, men UDEN\n"
-"NOGEN FORM FOR GARANTI, uden selv de underforståede garantier omkring\n"
-"SALGBARHED eller EGNETHED TIL ET BESTEMT FORMÅL. Yderligere detaljer kan\n"
-"læses i GNU General Public License. Se /usr/share/common-licenses/GPL, for\n"
-"yderligere detaljer.\n"
+"Tento program je šírený v nádeji, že bude užitočný, avšak BEZ AKEJKOĽVEK\n"
+"ZÁRUKY; neposkytujú sa ani implicitné záruky PREDAJNOSTI alebo VHODNOSTI\n"
+"NA URČITÝ ÚČEL. Ďalšie podrobnosti hľadajte GNU General Public License.\n"
+"\n"
 
 #: ../adduser:1006
 msgid ""
@@ -489,54 +490,53 @@ msgid ""
 "  --conf | -c FILE  use FILE as configuration file\n"
 "\n"
 msgstr ""
-"adduser [--home MAPPE] [--shell SKAL] [--no-create-home] [--uid ID]\n"
-"[--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup GRUPPE | --gid "
+"adduser [--home ADR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
+"[--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup SKUPINA | --gid "
 "ID]\n"
-"[--disabled-password] [--disabled-login] bruger\n"
-"   Tilføjer en normal bruger\n"
+"[--disabled-password] [--disabled-login] POUŽÍVATEĽ\n"
+"   Pridať bežného používateľa\n"
 "\n"
-"adduser --system [--home MAPPE] [--shell SKAL] [--no-create-home] [--uid "
-"ID]\n"
-"[--gecos GECOS] [--group | --ingroup GRUPPE | --gid ID] [--disabled-"
+"adduser --system [--home ADR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
+"[--gecos GECOS] [--group | --ingroup SKUPINA | --gid ID] [--disabled-"
 "password]\n"
-"[--disabled-login] BRUGER\n"
-"   Tilføj en systembruger\n"
+"[--disabled-login] POUŽÍVATEĽ\n"
+"   Pridať systémového používateľa\n"
 "\n"
-"adduser --group [--gid ID] GRUPPE\n"
-"addgroup [--gid ID] GRUPPE\n"
-"   Tilføjer en brugergruppe\n"
+"adduser --group [--gid ID] SKUPINA\n"
+"addgroup [--gid ID] SKUPINA\n"
+"   Pridať používateľskú skupinu\n"
 "\n"
-"adduser --group --system [--gid ID] gruppe\n"
-"addgroup --system [--gid ID] gruppe\n"
-"   Tilføj en systemgruppe\n"
+"addgroup --system [--gid ID] SKUPINA\n"
+"   Pridať systémovú skupinu\n"
 "\n"
-"adduser BRUGER GRUPPE\n"
-"   Tilføj en eksisterende bruger til en eksisterende gruppe\n"
+"adduser POUŽÍVATEĽ SKUPINA\n"
+"   Pridať existujúceho používateľa do existujúcej skupiny\n"
 "\n"
-"Generelle tilvalg:\n"
-"  --quiet | -q     giv ikke procesinformation til stdout\n"
-"  --force-badname  tillad brugernavne som ikke matcher\n"
-"                   konfigurationsvariablen NAME_REGEX\n"
-"  --help | -h      hjælpetekst\n"
-"  --version | -v   versionnummer og ophavsret\n"
-"  --conf | -c FIL  brug FIL som konfigurationsfil\n"
+"všeobecné voľby:\n"
+"  --quiet | -q      neposielať informácie o pribehu na štand. výstup\n"
+"  --force-badname   povoliť používateľské mená, ktoré\n"
+"                    nezodpovedajú konfiguračnej premennej NAME_REGEX\n"
+"  --help | -h       informácie o použití\n"
+"  --version | -v    verzia a autorské práva\n"
+"  --conf | -c SÚBOR použiť SÚBOR ako konfiguračný súbor\n"
+"\n"
 
 #. everyone can issue "--help" and "--version", but only root can go on
 #: ../deluser:99
 msgid "Only root may remove a user or group from the system.\n"
-msgstr "Kun root må fjerne en bruger eller gruppe fra systemet.\n"
+msgstr "Iba root môže odstrániť používateľa alebo skupinu zo systému.\n"
 
 #: ../deluser:120
 msgid "No options allowed after names.\n"
-msgstr "Ingen tilvalg tilladt efter navne.\n"
+msgstr "Po mene nie sú povolené žiadne voľby.\n"
 
 #: ../deluser:128
 msgid "Enter a group name to remove: "
-msgstr "Indtast et gruppenavn der skal fjernes: "
+msgstr "Zadajte názov skupiny, ktorá má byť odstránená."
 
 #: ../deluser:130
 msgid "Enter a user name to remove: "
-msgstr "Indtast et brugernavn der skal fjernes: "
+msgstr "Zadajte meno používateľa, ktorý má byť odstránený."
 
 #: ../deluser:170
 msgid ""
@@ -545,121 +545,122 @@ msgid ""
 "you need to install the `perl-modules' package. To accomplish that, run\n"
 "apt-get install perl-modules.\n"
 msgstr ""
-"For at bruge funktionerne --remove-home, --remove-all-files og --backup,\n"
-"skal du installere pakken »perl-modules«. For at udføre dette, kør\n"
+"Aby ste mohli použiť voľby --remove-home, --remove-all-files a --backup "
+"features,\n"
+"musíte nainštalovať balík „perl-modules“. Ak tak chcete urobiť, spustite\n"
 "apt-get install perl-modules.\n"
 
 #: ../deluser:219
 #, perl-format
 msgid "The user `%s' is not a system user. Exiting.\n"
-msgstr "Brugeren »%s« er ikke en systembruger. Afslutter.\n"
+msgstr "Používateľ „%s“ nie je systémový používateľ. Koniec.\n"
 
 #: ../deluser:223
 #, perl-format
 msgid "The user `%s' does not exist, but --system was given. Exiting.\n"
-msgstr "Brugeren »%s« findes ikke, men --system var angivet. Afslutter.\n"
+msgstr "Používateľ „%s“ neexistuje, ale bola uvedená voľba --system. Koniec.\n"
 
 #: ../deluser:234
 msgid "WARNING: You are just about to delete the root account (uid 0)\n"
-msgstr ""
-"ADVARSEL: Du er i gang med at slette administratorkontoen (root) (uid 0)\n"
+msgstr "UPOZORNENIE: Chystáte sa mazať účet root (uid 0)\n"
 
 #: ../deluser:235
 msgid ""
 "Usually this is never required as it may render the whole system unusable\n"
 msgstr ""
-"Normalt er dette aldrig krævet, da det kan gøre hele systemet ubrugeligt\n"
+"To zvyčajne nie je nikdy potrebné, pretože to môže spôsobiť nefunkčnosť "
+"celého systému\n"
 
 #: ../deluser:236
 msgid "If you really want this, call deluser with parameter --force\n"
-msgstr ""
-"Hvis du virkelig ønsker dette, så kald deluser med parameteren --force\n"
+msgstr "Ak to naozaj chcete urobiť, zavolajte deluser s parametrom --force\n"
 
 #: ../deluser:237
 msgid "Stopping now without having performed any action\n"
-msgstr "Stopper nu uden at have udført nogen handling\n"
+msgstr "Ukončenie bez vykonania operácie\n"
 
 #: ../deluser:248
 msgid "Looking for files to backup/remove ...\n"
-msgstr "Kigger efter filer til sikkerhedskopiering/fjernelse...\n"
+msgstr "Hľadajú sa súbory, ktoré treba zálohovať/odstrániť...\n"
 
 #: ../deluser:251
 #, perl-format
 msgid "fork for `mount' to parse mount points failed: %s\n"
 msgstr ""
-"forgrening for »mount« til fortolkning af monteringspunkter mislykkedes: %s\n"
+"nepodarilo sa nájsť „mount“, ktorý je potrebný na čítanie\n"
+"bodov pripojenia: %s\n"
 
 #: ../deluser:261
 #, perl-format
 msgid "pipe of command `mount' could not be closed: %s\n"
-msgstr "datakanal for kommandoen »mount« kunne ikke lukkes: %s\n"
+msgstr "rúru príkazu „mount“ nebolo možné zatvoriť: %s\n"
 
 #: ../deluser:270
 #, perl-format
 msgid "Not backing up/removing `%s', it is a mount point.\n"
-msgstr "Laver ikke sikkerhedskopi/fjerner »%s«, det er et monteringspunkt.\n"
+msgstr "Nezálohuje/neodstraňuje sa „%s“, je to bod pripojenia.\n"
 
 #: ../deluser:277
 #, perl-format
 msgid "Not backing up/removing `%s', it matches %s.\n"
-msgstr "Laver ikke sikkerhedskopi/fjerne »%s«, den matcher %s.\n"
+msgstr "Nezálohuje/neodstraňuje sa „%s“, zodpovedá %s.\n"
 
 #: ../deluser:309
 #, perl-format
 msgid "Cannot handle special file %s\n"
-msgstr "Kan ikke håndtere specialfilen %s\n"
+msgstr "Nedá sa pracovať so špeciálnym súborom %s\n"
 
 #: ../deluser:317
 #, perl-format
 msgid "Backing up files to be removed to %s ...\n"
-msgstr "Laver sikkerhedskopi af filer, der skal fjernes, til %s....\n"
+msgstr "Zálohujú sa súbory, ktoré sa majú odstrániť, %s ...\n"
 
 #: ../deluser:343
 msgid "Removing files ...\n"
-msgstr "Fjerner filer...\n"
+msgstr "Odstraňujú sa súbory...\n"
 
 #: ../deluser:355
 msgid "Removing crontab ...\n"
-msgstr "Fjerner crontab...\n"
+msgstr "Odstraňuje sa crontab...\n"
 
 #: ../deluser:361
 #, perl-format
 msgid "Warning: group `%s' has no more members.\n"
-msgstr "Advarsel: Gruppe »%s« har ikke flere medlemmer.\n"
+msgstr "Upozornenie: Skupina „%s“ už nemá ďalších členov.\n"
 
 #: ../deluser:383
 #, perl-format
 msgid "getgrnam `%s' failed. This shouldn't happen.\n"
-msgstr "getgrnam »%s« mislykkedes. Dette burde ikke ske.\n"
+msgstr "getgrnam „%s“ zlyhalo. Toto by sa nemalo stať.\n"
 
 #: ../deluser:388
 #, perl-format
 msgid "The group `%s' is not a system group. Exiting.\n"
-msgstr "Gruppen »%s« er ikke en systemgruppe. Afslutter.\n"
+msgstr "Skupina „%s“ nie je systémová skupina. Koniec.\n"
 
 #: ../deluser:392
 #, perl-format
 msgid "The group `%s' is not empty!\n"
-msgstr "Gruppen »%s« er ikke tom!\n"
+msgstr "Skupina „%s“ nie je prázdna!\n"
 
 #: ../deluser:398
 #, perl-format
 msgid "`%s' still has `%s' as their primary group!\n"
-msgstr "»%s« har stadig »%s« som deres primære gruppe!\n"
+msgstr "„%s“ stále má „%s“ ako primárnu skupinu!\n"
 
 #: ../deluser:422
 msgid "You may not remove the user from their primary group.\n"
-msgstr "Du må ikke fjerne brugeren fra dennes primære gruppe.\n"
+msgstr "Nemožete odstrániť používateľa z jeho primárnej skupiny.\n"
 
 #: ../deluser:436
 #, perl-format
 msgid "The user `%s' is not a member of group `%s'.\n"
-msgstr "Brugeren »%s« er ikke et medlem af gruppen »%s«.\n"
+msgstr "Používateľ „%s“  nie je členom skupiny „%s“.\n"
 
 #: ../deluser:439
 #, perl-format
 msgid "Removing user `%s' from group `%s' ...\n"
-msgstr "Fjerner bruger »%s« fra gruppe »%s«...\n"
+msgstr "Odstraňuje sa používateľ „%s“ zo skupiny „%s“...\n"
 
 #: ../deluser:458
 #, perl-format
@@ -667,19 +668,19 @@ msgid ""
 "deluser version %s\n"
 "\n"
 msgstr ""
-"deluser version %s\n"
+"deluser verzia %s\n"
 "\n"
 
 #: ../deluser:459
 msgid "Removes users and groups from the system.\n"
-msgstr "Fjerner brugere og grupper fra systemet.\n"
+msgstr "Odstraňuje používateľov a skupiny zo systému.\n"
 
 #: ../deluser:461
 msgid ""
 "Copyright (C) 2000 Roland Bauerschmidt <roland@copyleft.de>\n"
 "\n"
 msgstr ""
-"Ophavsret 2000 Roland Bauerschmidt <roland@copyleft.de>\n"
+"Copyright (C) 2000 Roland Bauerschmidt <roland@copyleft.de>\n"
 "\n"
 
 #: ../deluser:463
@@ -688,8 +689,9 @@ msgid ""
 "<imurdock@gnu.ai.mit.edu> and Ted Hajek <tedhajek@boombox.micro.umn.edu>\n"
 "\n"
 msgstr ""
-"deluser er baseret på adduser af Guy Maor <maor@debian.org>, Ian Murdock\n"
-"<imurdock@gnu.ai.mit.edu> og Ted Hajek <tedhajek@boombox.micro.umn.edu>\n"
+"deluser je založený na adduser, ktorý napísali Guy Maor <maor@debian.org>,\n"
+"Ian Murdock <imurdock@gnu.ai.mit.edu> a\n"
+"Ted Hajek <tedhajek@boombox.micro.umn.edu>\n"
 "\n"
 
 #: ../deluser:479
@@ -724,34 +726,36 @@ msgid ""
 "  --conf | -c FILE  use FILE as configuration file\n"
 "\n"
 msgstr ""
-"deluser BRUGER\n"
-"  fjern en normal bruger fra systemet\n"
-"  eksempel: deluser morten\n"
+"deluser POUŽÍVATEĽ\n"
+"  odstrániť obyčajného používateľa zo systému\n"
+"  príklad: deluser mike\n"
 "\n"
-"  --remove-home          fjern brugerens hjemmemappe og postkø\n"
-"  --remove-all-files     fjern alle filer ejet af bruger\n"
-"  --backup               lav sikkerhedskopi før fjernelse.\n"
-"  --backup-to <DIR>      destinationsmappe for sikkerhedskopierne.\n"
-"                         Standard er den aktuelle mappe.\n"
-"  --system               fjern kun hvis systembruger\n"
+"  --remove-home             odstrániť domovský a poštový adresár "
+"používateľa\n"
+"  --remove-all-files        odstrániť všetky súbory, ktoré používateľ "
+"vlastní\n"
+"  --backup                  zálohovať súbory pred odstránením.\n"
+"  --backup-to <DIR>         cieľový adresár pre zálohy.\n"
+"                            Štandardne aktuálny adresár.\n"
+"  --system                  odstrániť iba ak je to systémový používateľ\n"
 "\n"
-"delgroup GRUPPE\n"
-"deluser --group GRUPPE\n"
-"  fjern en gruppe fra systemet\n"
-"  eksempel: deluser --group studenter\n"
+"delgroup SKUPINA\n"
+"deluser --group SKUPINA\n"
+"  odstrániť skupinu zo systému\n"
+"  príklad: deluser --group students\n"
 "\n"
-"  --system               fjern kun hvis systemgruppe\n"
-"  --only-if-empty        fjern kun hvis ingen medlemmer tilbage\n"
+"  --system                  odstrániť iba ak je skupina systémová\n"
+"  --only-if-empty           odstrániť iba ak neobsahuje používateľov\n"
 "\n"
-"deluser BRUGER GRUPPE\n"
-"  fjern brugeren fra en gruppe\n"
-"  eksempel: deluser mike studenter\n"
+"deluser POUŽÍVATEĽ SKUPINA\n"
+"  odstrániť používateľa zo skupiny\n"
+"  príklad: deluser mike students\n"
 "\n"
-"generelle tilvalg:\n"
-"  --quiet | -q      giv ikke procesinformation til stdout\n"
-"  --help | -h       hjælpetekst\n"
-"  --version | -v    versionnummer og ophavsret\n"
-"  --conf | -c FILE  brug FIL som konfigurationsfil\n"
+"všeobecné voľby:\n"
+"  --quiet | -q      neposielať informácie o pribehu na štand. výstup\n"
+"  --help | -h       informácie o použití\n"
+"  --version | -v    verzia a autorské práva\n"
+"  --conf | -c SÚBOR použiť SÚBOR ako konfiguračný súbor\n"
 "\n"
 
 #: ../AdduserCommon.pm:64 ../AdduserCommon.pm:70
@@ -762,19 +766,33 @@ msgstr "%s: %s"
 #: ../AdduserCommon.pm:82
 #, perl-format
 msgid "`%s' does not exist. Using defaults.\n"
-msgstr "»%s« findes ikke. Bruger standard.\n"
+msgstr "„%s“ neexistuje. Používam štandardné.\n"
 
 #: ../AdduserCommon.pm:92
 #, perl-format
 msgid "Couldn't parse `%s', line %d.\n"
-msgstr "Kunne ikke fortolke »%s«, linje %d.\n"
+msgstr "Nepodarila sa analýza „%s“, riadok %d.\n"
 
 #: ../AdduserCommon.pm:97
 #, perl-format
 msgid "Unknown variable `%s' at `%s', line %d.\n"
-msgstr "Ukendt variabel »%s« på »%s«, linje %d.\n"
+msgstr "Neznáma premenná „%s“ v „%s“, riadok %d.\n"
 
 #: ../AdduserCommon.pm:175
 #, perl-format
 msgid "Could not find program named `%s' in $PATH.\n"
-msgstr "Kunne ikke finde program med navnet »%s« i $PATH.\n"
+msgstr "Nenašiel sa program s názvom „%s“ v $PATH.\n"
+
+#~ msgid "Warning: The home dir you specified does not exist.\n"
+#~ msgstr "Upozornenie: Domovský adresár, ktorý ste uviedli, neexistuje.\n"
+
+#~ msgid "The group `%s' already exists and is not a system group.\n"
+#~ msgstr "Skupina „%s“ už existuje a nie je systémová skupina.\n"
+
+#~ msgid "The user `%s' already exists as a system user. Exiting.\n"
+#~ msgstr "Používateľ „%s“ už existuje ako systémový používateľ. Koniec.\n"
+
+#~ msgid "Warning: Removing group `%s', since no other user is part of it.\n"
+#~ msgstr ""
+#~ "Upozornenie: Odstraňujem skupinu „%s“, pretože sa v nej\n"
+#~ "nenachádza žiadny iný používateľ.\n"

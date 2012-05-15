@@ -1,8 +1,7 @@
 Source: adduser
 Section: admin
 Priority: important
-Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-XSBC-Original-Maintainer: Debian Adduser Developers <adduser-devel@lists.alioth.debian.org>
+Maintainer: Debian Adduser Developers <adduser-devel@lists.alioth.debian.org>
 Uploaders: Joerg Hoh <joerg@joerghoh.de>, Roland Bauerschmidt <rb@debian.org>, Stephen Gran <sgran@debian.org>
 Standards-Version: 3.9.2
 Build-Depends: po-debconf
@@ -15,7 +14,6 @@ Package: adduser
 Architecture: all
 Multi-Arch: foreign
 Depends: perl-base (>=5.6.0), passwd (>= 1:4.0.12), debconf | debconf-2.0
-Recommends: ecryptfs-utils (>= 67-1)
 Suggests: liblocale-gettext-perl, perl-modules
 Replaces: manpages-pl (<= 20051117-1), manpages-it (<< 0.3.4-2)
 Description: add and remove users and groups

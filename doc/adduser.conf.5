@@ -122,15 +122,6 @@ User and group names are checked against this regular expression. If the name
 doesn't match this regexp, user and group creation in adduser is refused unless
 --force-badname is set. With --force-badname set, only weak checks are
 performed. The default is the most conservative ^[a-z][-a-z0-9]*$.
-When --system is specified, NAME_REGEX_SYSTEM is used instead.
-.TP
-\fBNAME_REGEX_SYSTEM\fB
-Names of system users are checked against this regular expression.
-If --system is supplied and the name
-doesn't match this regexp, user creation in adduser is refused unless
---force-badname is set. With --force-badname set, only weak checks are
-performed. The default is as for the default NAME_REGEX but also
-allowing uppercase letters.
 .TP
 \fBSKEL_IGNORE_REGEX\fB
 Files in /etc/skel/ are checked against this regex, and not copied to

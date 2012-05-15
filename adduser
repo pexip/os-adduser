@@ -103,7 +103,6 @@ our $no_create_home = undef;
 our $special_home = undef;
 our $special_shell = undef;
 our $add_extra_groups = 0;
-our $encrypt_home = undef;
 
 # Global variables we need later
 my $existing_user = undef;
@@ -141,7 +140,6 @@ unless ( GetOptions ("quiet|q" => sub { $verbose = 0 },
 	    "gid=i" => \$new_gid,
 	    "conf=s" => \$configfile,
 	    "no-create-home" => \$no_create_home,
-	    "encrypt-home" => \$encrypt_home,
             "add_extra_groups" => \$add_extra_groups,
 	    "debug" => sub { $verbose = 2 } ) ) {
     &usage();
@@ -224,11 +222,6 @@ if ($found_group_opt) {
     }
 }
 
-my $ecryptfs_setup_private;
-if (defined($encrypt_home)) {
-	$ecryptfs_setup_private = &which('ecryptfs-setup-private');
-}
-
 
 $ENV{"VERBOSE"} = $verbose;
 $ENV{"DEBUG"}   = $verbose;
@@ -237,7 +230,7 @@ $ENV{"DEBUG"}   = $verbose;
 # preseed configuration data and then read the config file
 preseed_config(\@defaults,\%config);
 
-&checkname($new_name, $found_sys_opt) if defined $new_name;
+&checkname($new_name) if defined $new_name;
 $SIG{'INT'} = $SIG{'QUIT'} = $SIG{'HUP'} = 'handler';
 
 #####
@@ -678,11 +671,6 @@ sub create_homedir {
       chmod ($dir_mode, $home_dir) ||
 	  &cleanup("chmod $dir_mode $home_dir: $!\n");
 
-      if (defined($encrypt_home)) {
-	printf gtx("Setting up encryption ...\n") if $verbose;
-	&systemcall($ecryptfs_setup_private, '-b', '-u', $new_name);
-      }
-
       if ($config{"skel"} && $copy_skeleton) {
 	  printf gtx("Copying files from `%s' ...\n"),$config{skel} if $verbose;
 	  open(my $FIND, "cd $config{skel}; find .  -print |")
@@ -694,10 +682,6 @@ sub create_homedir {
 	      &copy_to_dir($config{"skel"}, $_, $home_dir, $new_uid,
 			    $new_gid, ($config{"setgid_home"} =~ /yes/i));
 	  }
-      }
-
-      if (defined($encrypt_home)) {
-	  &systemcall("/bin/umount", $home_dir);
       }
   }
 }
@@ -874,12 +858,11 @@ sub copy_to_dir {
 
 # checkname: perform some sanity checks
 # parameters:
-#   name: the name to check
-#   system: 0 if the user isn't a system user, 1 otherwise
+#   none
 # return values:
 #   none (exits on error)
 sub checkname {
-    my ($name, $system) = @_;
+    my ($name) = @_;
     if ($name !~ /^[_.A-Za-z0-9][-\@_.A-Za-z0-9]*\$?$/) {
 	printf STDERR
 (gtx("%s: To avoid problems, the username should consist only of
@@ -888,16 +871,14 @@ a dash (as defined by IEEE Std 1003.1-2001). For compatibility with Samba
 machine accounts \$ is also supported at the end of the username\n"), $0);
         exit RET_INVALID_CHARS_IN_NAME;;
     }
-    if ($system
-        ? $name !~ qr/$config{"name_regex_system"}/
-        : $name !~ qr/$config{"name_regex"}/) {
+    if ($name !~ qr/$config{"name_regex"}/) {
       if ($allow_badname) {
 	print (gtx("Allowing use of questionable username.\n")) if ($verbose);
       }
       else {
         printf STDERR
 (gtx("%s: Please enter a username matching the regular expression configured
-via the NAME_REGEX[_SYSTEM] configuration variable.  Use the `--force-badname'
+via the NAME_REGEX configuration variable.  Use the `--force-badname'
 option to relax this check or reconfigure NAME_REGEX.\n"), $0);
         exit RET_INVALID_CHARS_IN_NAME;
       }
@@ -1024,7 +1005,7 @@ sub usage {
     printf gtx(
 "adduser [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]
 [--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup GROUP | --gid ID]
-[--disabled-password] [--disabled-login] [--encrypt-home] USER
+[--disabled-password] [--disabled-login] USER
    Add a normal user
 
 adduser --system [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]
@@ -1045,7 +1026,7 @@ adduser USER GROUP
 general options:
   --quiet | -q      don't give process information to stdout
   --force-badname   allow usernames which do not match the
-                    NAME_REGEX[_SYSTEM] configuration variable
+                    NAME_REGEX configuration variable
   --help | -h       usage message
   --version | -v    version number and copyright
   --conf | -c FILE  use FILE as configuration file\n\n");
