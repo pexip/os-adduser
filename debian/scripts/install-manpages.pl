@@ -29,18 +29,26 @@ foreach $file (readdir(DIR)) {
 	next unless ($section = $file) =~ s/^$page\.([1-8]).*/$1/;
 	($language = $file) =~ s/^$page\.$section\.?//;
 
-	my $destfile;
+	my ($destfile, $destdir);
 	if($language) {
-		$destfile = $mandir.$language."/man".$section."/".$page.".".$section;
+		$destdir = $mandir.$language."/man".$section;
+                $destfile = $destdir."/".$page.".".$section;
 		my $relfile = $page.".".$section.".gz";
+                if (not -d $destdir) {
+                    mkdirs($destdir);
+                }
 		foreach(@{$links->{$page}}) {
 			my $linkfile = $mandir.$language."/man".$section."/".$_.".".$section.".gz";
 			printf("Creating symlink from %s to %s...\n", $destfile, $linkfile);
 			symlink($relfile, $linkfile);
 		}
 	} else {
-		$destfile = $mandir."man".$section."/".$page.".".$section;
+		$destdir = $mandir."/man".$section;
+		$destfile = $destdir."/".$page.".".$section;
 		my $relfile = $page.".".$section.".gz";
+                if (not -d $destdir) {
+                    mkdirs($destdir);
+                }
 		foreach(@{$links->{$page}}) {
 			my $linkfile = $mandir."man".$section."/".$_.".".$section.".gz";
 			printf("Creating symlink from %s to %s...\n", $destfile, $linkfile);
@@ -58,7 +66,13 @@ foreach $file (readdir(DIR)) {
 	close(IN);
 	close(OUT);
 	printf("Compressing and setting permissions for %s...\n", $destfile);
-	system("/bin/gzip", "-9", $destfile);
+	system("/bin/gzip", "-9n", $destfile);
 	chmod(0644, $destfile.".gz");
 }
 closedir(DIR);
+
+sub mkdirs {
+    my (@dirs) = @_;
+    system('install', '-o', 'root', '-g', 'root', '-d', '-m0755', '--', @dirs) == 0
+        or die("exec install -d @dirs failed");
+}

@@ -1,19 +1,23 @@
 # Polish translation of adduser
 # This file is distributed under the same license as the adduser package.
-# Robert Luberda <robert@debian.org>, 2005, 2010
 #
+# Robert Luberda <robert@debian.org>, 2005, 2010.
+# Łukasz Dulny <BartekChom@poczta.onet.pl>, 2016.
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.112+nmu2\n"
 "Report-Msgid-Bugs-To: adduser-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2010-11-21 17:13-0400\n"
-"PO-Revision-Date: 2010-11-07 17:58+0100\n"
-"Last-Translator: Robert Luberda <robert@debian.org>\n"
+"POT-Creation-Date: 2016-05-29 07:48+0200\n"
+"PO-Revision-Date: 2016-06-02 19:42+0100\n"
+"Last-Translator: Łukasz Dulny <BartekChom@poczta.onet.pl>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10"
+" || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 2.0\n"
 
 #. everyone can issue "--help" and "--version", but only root can go on
 #: ../adduser:150
@@ -460,13 +464,13 @@ msgstr ""
 msgid ""
 "adduser [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
 "[--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup GROUP | --gid ID]\n"
-"[--disabled-password] [--disabled-login] USER\n"
+"[--disabled-password] [--disabled-login] [--add_extra_groups] USER\n"
 "   Add a normal user\n"
 "\n"
 "adduser --system [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
 "[--gecos GECOS] [--group | --ingroup GROUP | --gid ID] [--disabled-"
 "password]\n"
-"[--disabled-login] USER\n"
+"[--disabled-login] [--add_extra_groups] USER\n"
 "   Add a system user\n"
 "\n"
 "adduser --group [--gid ID] GROUP\n"
@@ -490,14 +494,13 @@ msgid ""
 msgstr ""
 "adduser [--home KATALOG] [--shell POWŁOKA] [--no-create-home] [--uid ID]\n"
 "[--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup GRUPA | --gid ID]\n"
-"[--disabled-password] [--disabled-login] użytkownik\n"
+"[--disabled-password] [--disabled-login] [--add_extra_groups] użytkownik\n"
 "   Dodaje zwykłego użytkownika\n"
 "\n"
-"adduser --system [--home KATALOG] [--shell POWŁOKA] [--no-create-home] [--"
-"uid ID]\n"
-"[--gecos GECOS] [--group | --ingroup GRUPA | --gid ID] [--disabled-"
-"password]\n"
-"[--disabled-login] UŻYTKOWNIK\n"
+"adduser --system [--home KATALOG] [--shell POWŁOKA] [--no-create-home] [--uid"
+" ID]\n"
+"[--gecos GECOS] [--group | --ingroup GRUPA | --gid ID] [--disabled-password]\n"
+"[--disabled-login] [--add_extra_groups] UŻYTKOWNIK\n"
 "   Dodaje użytkownika systemowego\n"
 "\n"
 "adduser --group [--gid ID] GRUPA\n"
@@ -518,6 +521,7 @@ msgstr ""
 "  --help | -h       informacje o użyciu programu\n"
 "  --version | -v    numer wersji i prawa autorskie\n"
 "  --conf | -c PLIK  używa PLIKU jako pliku konfiguracji\n"
+"\n"
 
 #. everyone can issue "--help" and "--version", but only root can go on
 #: ../deluser:99
@@ -776,3 +780,4 @@ msgstr "Nieznana zmienna \"%s\" w \"%s\", linia %d.\n"
 #, perl-format
 msgid "Could not find program named `%s' in $PATH.\n"
 msgstr "W zmiennej $PATH nie znaleziono programu \"%s\".\n"
+

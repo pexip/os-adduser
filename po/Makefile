@@ -18,7 +18,7 @@ all: update $(MO)
 update: adduser.pot
 	-@for po in $(PO); do \
 	echo -n "Updating $$po"; \
-	$(MSGMERGE) -U $$po adduser.pot; \
+	$(MSGMERGE) --previous -U $$po adduser.pot; \
 	done;
 
 adduser.pot: $(SOURCES)

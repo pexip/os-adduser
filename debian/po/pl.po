@@ -15,10 +15,10 @@
 # Wojciech Zareba <wojtekz@comp.waw.pl>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser.pl\n"
+"Project-Id-Version: adduser 3.112+nmu2\n"
 "Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
 "POT-Creation-Date: 2011-06-13 19:26+0000\n"
-"PO-Revision-Date: 2007-07-03 13:43+0200\n"
+"PO-Revision-Date: 2016-06-17 18:13+0200\n"
 "Last-Translator: Wojciech Zareba <wojtekz@comp.waw.pl>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
 "Language: pl\n"

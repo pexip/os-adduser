@@ -121,6 +121,9 @@ accidentally deleting non-system users/groups. Additionally, if the
 user does not exist, no error value is returned. This option is mainly
 for use in Debian package maintainer scripts.
 .TP
+.B \-\-only-if-empty 
+Only remove if no members are left.
+.TP
 .B \-\-backup
 Backup all files contained in the userhome and the mailspool-file to a file named
 /$user.tar.bz2 or /$user.tar.gz.
@@ -172,9 +175,17 @@ The required perl-package 'perl modules' is not installed. This package is requi
 For removing the root account the parameter "--force" is required. No action was performed.
 
 .SH FILES
-/etc/deluser.conf
+.IR /etc/deluser.conf
+Default configuration file for deluser and delgroup
+.TP
+.IR /usr/local/sbin/deluser.local
+Optional custom add-ons.
+
 .SH "SEE ALSO"
-deluser.conf(5), adduser(8), userdel(8), groupdel(8)
+.BR adduser (8),
+.BR deluser.conf (5),
+.BR groupdel (8),
+.BR userdel (8) 
 
 .SH COPYRIGHT
 Copyright (C) 2000 Roland Bauerschmidt. Modifications (C) 2004

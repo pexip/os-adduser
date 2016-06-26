@@ -13,10 +13,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser\n"
+"Project-Id-Version: adduser 3.104\n"
 "Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
 "POT-Creation-Date: 2011-06-13 19:26+0000\n"
-"PO-Revision-Date: 2007-07-01 11:20+0200\n"
+"PO-Revision-Date: 2016-06-17 18:05+0200\n"
 "Last-Translator: Miroslav Kure <kurem@debian.cz>\n"
 "Language-Team: Czech <debian-l10n-czech@lists.debian.org>\n"
 "Language: cs\n"

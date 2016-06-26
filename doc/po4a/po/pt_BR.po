@@ -6,17 +6,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser VERSION\n"
+"Project-Id-Version: adduser 3.113+nmu3\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2010-11-02 14:09-0400\n"
-"PO-Revision-Date: 2006-08-22 23:19-0300\n"
+"PO-Revision-Date: 2016-06-17 18:31+0200\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@cathedrallabs.org>\n"
 "Language-Team: l10n portuguese <debian-l10n-portuguese@lists.debian.org>\n"
-"Language: \n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"pt_BR utf-8\n"
 
 # type: TH
 #. type: TH
@@ -1140,10 +1139,10 @@ msgstr "B<FIRST_UID> e B<LAST_UID>"
 #: ../adduser.conf.5:74
 msgid ""
 "specify an inclusive range of UIDs from which normal user's UIDs can be "
-"dynamically allocated. Default to I<1000> - I<29999>."
+"dynamically allocated. Default to I<1000> - I<59999>."
 msgstr ""
 "especifica um intervalo usado para alocação dinâmica dos UIDs dos usuários "
-"normais. O padrão é I<1000> - I<29999>."
+"normais. O padrão é I<1000> - I<59999>."
 
 # type: TP
 #. type: TP
@@ -1159,13 +1158,13 @@ msgstr "B<FIRST_SYSTEM_UID> e B<LAST_SYSTEM_UID>"
 #, fuzzy
 #| msgid ""
 #| "specify an inclusive range of UIDs from which normal user's UIDs can be "
-#| "dynamically allocated. Default to I<1000> - I<29999>."
+#| "dynamically allocated. Default to I<1000> - I<59999>."
 msgid ""
 "specify an inclusive range of GIDs from which system GIDs can be dynamically "
 "allocated.  Default to I<100> - I<999.>"
 msgstr ""
 "especifica um intervalo usado para alocação dinâmica dos UIDs dos usuários "
-"normais. O padrão é I<1000> - I<29999>."
+"normais. O padrão é I<1000> - I<59999>."
 
 # type: TP
 #. type: TP
@@ -1181,13 +1180,13 @@ msgstr "B<FIRST_UID> e B<LAST_UID>"
 #, fuzzy
 #| msgid ""
 #| "specify an inclusive range of UIDs from which normal user's UIDs can be "
-#| "dynamically allocated. Default to I<1000> - I<29999>."
+#| "dynamically allocated. Default to I<1000> - I<59999>."
 msgid ""
 "specify an inclusive range of GIDs from which normal group's GIDs can be "
-"dynamically allocated. Default to I<1000> - I<29999>."
+"dynamically allocated. Default to I<1000> - I<59999>."
 msgstr ""
 "especifica um intervalo usado para alocação dinâmica dos UIDs dos usuários "
-"normais. O padrão é I<1000> - I<29999>."
+"normais. O padrão é I<1000> - I<59999>."
 
 # type: TP
 #. type: TP
