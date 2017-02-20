@@ -11,7 +11,7 @@ Build-Depends-Indep: gettext (>= 0.13), po4a (>= 0.31)
 Vcs-Svn: svn://svn.debian.org/adduser/
 Vcs-Browser: http://svn.debian.org/wsvn/adduser/
 Homepage: http://alioth.debian.org/projects/adduser/
-XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
 
 Package: adduser
 Architecture: all
