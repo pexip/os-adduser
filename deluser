@@ -285,26 +285,9 @@ if($action eq "deluser") {
 	  push(@dirs, $File::Find::name)
 	    if(-d $File::Find::name);
 	} # sub home_match
-
-	# collect ecryptfs config files not stored in $HOME
-	sub ecryptfs_match {
-	  if ( $File::Find::name !~ m[^/var/lib/ecryptfs/\Q$user] &&  $File::Find::name !~ m[^/home/\.ecryptfs/\Q$user]) {
-	    $File::Find::prune=1;
-	    return;
-	  }
-	  push(@files, $File::Find::name)
-	    if(-f $File::Find::name || -l $File::Find::name);
-	  push(@dirs, $File::Find::name)
-	    if(-d $File::Find::name);
-	} # sub ecryptfs_match
-
+	
 	File::Find::find({wanted => \&home_match, untaint => 1, no_chdir => 1}, $pw_homedir)
 	  if(-d "$pw_homedir");
-	if(-d "/var/lib/ecryptfs/$user") {
-	  File::Find::find({wanted => \&ecryptfs_match, untaint => 1, no_chdir => 1}, "/var/lib/ecryptfs/$user");
-	} elsif (-d "/home/.ecryptfs/$user") {
-	  File::Find::find({wanted => \&ecryptfs_match, untaint => 1, no_chdir => 1}, "/home/.ecryptfs/$user");
-	}
 	push(@files, "/var/mail/$user")
 	  if(-e "/var/mail/$user");
       } else {
