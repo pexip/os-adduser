@@ -1,7 +1,7 @@
 **************************************************************************
 *                                                                        *
-*                   ADDUSER Local System Additions v4.6                  *
-*                 Copyright (C) 1999-2004, John Zaitseff                 *
+*                   ADDUSER Local System Additions v4.9                  *
+*                 Copyright (C) 1999-2013, John Zaitseff                 *
 *                                                                        *
 **************************************************************************
 
@@ -34,7 +34,8 @@ The adduser.local program  is written in Perl (with  comments!), and comes
 with a sample configuration file that is extensively documented.  In fact,
 the sample adduser.local.conf file is  probably all you will need to read,
 once you  have installed the program.   A number of sample  files are also
-included in the "examples" directory --- do what you like with these.
+included in the "adduser.local.conf.examples" directory --- do what you like
+with these.
 
 To  illustrate the  program's simplicity,  the following  lines  have been
 taken almost verbatim from the sample configuration file:
@@ -80,7 +81,7 @@ these steps as root:
 
 1. Copy the actual program to the correct location:
 
-       # cp ./adduser.local /usr/local/sbin
+       # cp --pr=t ./adduser.local /usr/local/sbin
        # chmod 755 /usr/local/sbin/adduser.local
 
 2. Copy the configuration file to the correct location:
@@ -97,11 +98,11 @@ these steps as root:
    files.  For example:
 
        # mkdir /etc/skel.other
-       # cp ./examples/skel.other/index.html /etc/skel.other
+       # cp --pr=t ./adduser.local.conf.examples/skel.other/index.html /etc/skel.other
 
 5. You are finished.
 
-The main reason  you have to install this program manually  is so that you
+The main reason you have to install this program manually is so that you
 do not forget to do Step 3, the most important one!
 
 
@@ -118,15 +119,15 @@ your modifications back to the author,  it is considered "good form" to do
 so,  as this  allows your  modifications  to be  incorporated into  future
 versions of the program, allowing others to benefit from them.
 
-All files in the "examples"  directory are released into the public domain
-and are NOT covered by the GNU General Public License.
+All files in the "adduser.local.conf.examples"  directory are released into
+the public domain and are NOT covered by the GNU General Public License.
 
 
 FEEDBACK
 ========
 
-Your  comments,  suggestions,  corrections  and  enhancements  are  always
-welcome!  Please send these to:
+Your comments, suggestions, corrections and enhancements are always warmly
+welcomed!  Please send these to:
 
 Postal:   John Zaitseff,
           Unit 6, 116 Woodburn Road,

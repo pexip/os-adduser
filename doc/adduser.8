@@ -68,8 +68,9 @@ Users' primary groups can also be overridden from the command line with the
 .BR \-\-gid " or " \-\-ingroup
 options to set the group by id or name, respectively.  Also, users can be
 added to one or more groups defined in adduser.conf either by setting
-ADD_EXTRA_GROUPS to 1 in adduser.conf, or by passing --add_extra_groups on
-the commandline.
+ADD_EXTRA_GROUPS to 1 in adduser.conf, or by passing 
+.B \-\-add_extra_groups 
+on the commandline.
 
 .B adduser
 will create a home directory subject to
@@ -110,20 +111,30 @@ username uid gid home-directory
 .br 
 The environment variable VERBOSE is set according to the following rule:
 .TP 
-0 if \-\-quiet is specified
+0 if 
+.B \-\-quiet
+is specified
 .TP 
-1 if neither \-\-quiet nor \-\-debug is specified
+1 if neither 
+.B \-\-quiet 
+nor
+.B \-\-debug 
+is specified
 .TP 
-2 if \-\-debug is specified
+2 if 
+.B \-\-debug
+is specified
 
-(The same applies to the variable DEBUG, but DEBUG is deprecated and will be removed in a later version of adduser.)
+(The same applies to the variable DEBUG, but DEBUG is deprecated and will be removed in a later version of 
+.BR adduser .)
 
 .SS "Add a system user"
 If called with one non-option argument and the
 .BR \-\-system " option, " adduser
 will add a system user. If a user with the same name already exists in
 the system uid range (or, if the uid is specified, if a user with that
-uid already exists), adduser will exit with a warning. This warning can be suppressed by adding "--quiet".
+uid already exists), adduser will exit with a warning. This warning can be suppressed by adding 
+.BR \-\-quiet .
 
 .B adduser
 will choose the first available UID from the range specified for
@@ -199,6 +210,9 @@ specified in the configuration file. This option forces
 and 
 .B addgroup
 to apply only a weak check for validity of the name.
+.B NAME_REGEX
+is described in 
+.BR adduser.conf (5).
 .TP
 .B \-\-gecos GECOS
 Set the gecos field for the new entry generated.
@@ -239,7 +253,7 @@ defined by
 in the configuration file.  This affects the users primary group.  To add additional
 groups, see the 
 .B add_extra_groups
-option
+option.
 .TP
 .B \-\-no-create-home
 Do not create the home directory, even if it doesn't exist.
@@ -291,8 +305,16 @@ to make adduser more verbose.
 .TP 
 /etc/adduser.conf
 Default configuration file for adduser and addgroup
+.TP
+/usr/local/sbin/adduser.local
+Optional custom add-ons.
+
 .SH "SEE ALSO"
-adduser.conf(5), deluser(8), useradd(8), groupadd(8), usermod(8),
+.BR adduser.conf (5), 
+.BR deluser (8), 
+.BR groupadd (8), 
+.BR useradd (8), 
+.BR usermod (8),
 Debian Policy 9.2.2.
 
 .SH COPYRIGHT

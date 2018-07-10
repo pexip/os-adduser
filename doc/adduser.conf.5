@@ -70,7 +70,7 @@ package, may assume that UIDs less than 100 are unallocated.
 .BR FIRST_UID " and " LAST_UID
 specify an inclusive range of UIDs from which normal user's UIDs can
 be dynamically allocated. Default to
-.IR 1000 " - " 29999 .
+.IR 1000 " - " 59999 .
 .TP
 .BR FIRST_SYSTEM_GID " and " LAST_SYSTEM_GID
 specify an inclusive range of GIDs from which system GIDs can be dynamically allocated.
@@ -80,7 +80,7 @@ Default to
 .BR FIRST_GID " and " LAST_GID
 specify an inclusive range of GIDs from which normal group's GIDs can
 be dynamically allocated. Default to
-.IR 1000 " - " 29999 .
+.IR 1000 " - " 59999 .
 .TP
 \fBUSERGROUPS\fP
 If this is set to
@@ -136,7 +136,7 @@ EXTRA_GROUPS (below).
 .TP
 \fBEXTRA_GROUPS\fB
 This is the list of groups that new non-system users will be added to.
-By default, this list is 'dialout cdrom floppy audio video plugdev users games'
+By default, this list is 'dialout cdrom floppy audio video plugdev users games'.
 .SH NOTES
 .TP
 \fBVALID NAMES\fB
@@ -147,4 +147,8 @@ An additional check can be adjusted via the configuration parameter NAME_REGEX t
 .SH FILES
 .I /etc/adduser.conf
 .SH SEE ALSO
-adduser(8), addgroup(8), deluser(8), delgroup(8), deluser.conf(5)
+.BR addgroup (8), 
+.BR adduser (8), 
+.BR delgroup (8),
+.BR deluser (8), 
+.BR deluser.conf (5)

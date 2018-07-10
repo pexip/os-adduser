@@ -13,10 +13,10 @@
 # Yuri Kozlov <kozlov.y@gmail.com>, 2004, 2005, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.103\n"
+"Project-Id-Version: adduser 3.103\n"
 "Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
 "POT-Creation-Date: 2011-06-13 19:26+0000\n"
-"PO-Revision-Date: 2007-07-01 16:26+0400\n"
+"PO-Revision-Date: 2016-06-17 17:57+0200\n"
 "Last-Translator: Yuri Kozlov <kozlov.y@gmail.com>\n"
 "Language-Team: Russian <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"

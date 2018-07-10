@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser\n"
+"Project-Id-Version: adduser 3.112+nmu2\n"
 "Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
 "POT-Creation-Date: 2011-06-13 19:26+0000\n"
-"PO-Revision-Date: 2010-10-11 05:26+0100\n"
+"PO-Revision-Date: 2016-06-17 18:07+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <debian-l10n-danish@lists.debian.org> \n"
 "Language: da\n"

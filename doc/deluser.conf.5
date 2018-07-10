@@ -21,7 +21,17 @@ Each option takes the form
 Double or single quotes are allowed around the value.  Comment lines
 must have a hash sign (#) at the beginning of the line.
 
-deluser(8) and delgroup(8) also read /etc/adduser.conf, see adduser.conf(8); settings in deluser.conf may overwrite settings made in adduser.conf.
+.B deluser(8) 
+and 
+.B delgroup(8) 
+also read 
+.I /etc/adduser.conf,
+see 
+.B adduser.conf(5); 
+settings in 
+.I deluser.conf 
+may overwrite settings made in 
+.I adduser.conf.
 
 The valid configuration options are:
 .TP
@@ -66,7 +76,7 @@ In other words: By default only files below /home belonging to that specific use
 
 .TP
 \fBONLY_IF_EMPTY\fP
-Only delete a group if there are no user who belong to this group. Defaults to 0.
+Only delete a group if there are no users belonging to this group. Defaults to 0.
 .TP
 \fBEXCLUDE_FSTYPES\fP
 A regular expression which describes all file systems which should be excluded when looking for files of a user to be deleted. Defaults to "(proc|sysfs|usbfs|devpts|tmpfs|afs)".
@@ -74,4 +84,6 @@ A regular expression which describes all file systems which should be excluded w
 .SH FILES
 .I /etc/deluser.conf
 .SH SEE ALSO
-deluser(8), delgroup(8), adduser.conf(5)
+.BR adduser.conf (5), 
+.BR delgroup (8), 
+.BR deluser(8)

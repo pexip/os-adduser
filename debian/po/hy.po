@@ -3,10 +3,10 @@
 # Vardan Gevorgyan <vgevorgyan@debian.am>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: 3.103\n"
+"Project-Id-Version: adduser 3.103\n"
 "Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
 "POT-Creation-Date: 2011-06-13 19:26+0000\n"
-"PO-Revision-Date: 2008-04-09 12:36+0400\n"
+"PO-Revision-Date: 2016-06-17 18:10+0200\n"
 "Last-Translator: Vardan Gevorgyan <vgevorgyan@debian.am>\n"
 "Language-Team: Armenian <translation-team-hy@lists.sourceforge.net>\n"
 "Language: hy\n"

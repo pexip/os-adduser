@@ -1,3 +1,83 @@
+adduser (3.115) unstable; urgency=medium
+
+  [ Afif Elghraoui ]
+  * Adopt package (Closes: #811411)
+  * Set Vcs-* fields to point to Git repository
+  * Bump Standards-Version to 3.9.8
+  * Extend last_{u,g}id to 59999 to match policy update from 3.9.0
+    (Closes: #776203)
+  * Note to work on the lintian error for debconf template.
+  * Fix path to rpcinfo, used for NIS support.
+    (Thanks to Nis Martensen for report and patch).
+  * Update Vietnamese translations (Closes: #825610)
+    Thanks to all translators for providing updates
+
+  [ Helge Kreutzmann ]
+  * Debconf:
+      * Update Turkish translation. Closes: #676356.
+      * Fix language field in Norwegian translation. Closes: #695997.
+  * Program (translation):
+      * Use "--previous" when generating the updated po files.
+      * Mention "--add_extra_groups" in --help output. Closes: #547911.
+      * Update Japanese translation. Closes: #697109.
+      * Update Czech translation. Closes: #825734.
+      * Update Slovak translation. Closes: #825770.
+      * Updated Danish translation. Closes: #825778.
+      * Update Portuguese translation. Closes: #825867.
+      * Update Russian translation. Closes: #825876.
+      * Update Japanese translation. Closes: #825973.
+      * Update Swedish translation. Closes: #826947.
+      * Update Brazilian Portuguese translation. Closes: #826965.
+      * Update Italian translation. Closes: #827011.
+      * Update French translation. Closes: #827140.
+      * Update Hungarian translation.
+      * Update Polish translation.
+      * Update Basque translation.
+      * Update Norwegian translation.
+  * Manpage:
+      * Improve pointer to customization files. Closes: #611898.
+      * Improve pointer to NAME_REGEX. Closes: #508740.
+      * Document --only-if-empty in delgroup.8. Closes: #722583.
+      * Format SEE ALSO section correctly in all man pages.
+      * Various formatting and minor language updates noted by the German
+        translator(s).
+      * Fixes in the German translation. Closes: #685529, #698483.
+      * Update Portuguese translation. Closes: #756180, #825867.
+      * Update Danish translation. Closes: #825777.
+      * Update Russian translation. Closes: #825944.
+      * Update Italian translation. Closes: #827012.
+      * Update Polish translation.
+      * Update French translation.
+      * Update German translation.
+  * Update example from John Zaitseff <J.Zaitseff@zap.org.au> to version 4.9.
+        Thanks. Closes: #712944.
+  * Fix issues found by i18nspector.
+  * Add correct pot file
+  * Trivial unfuzzy
+  * Fix various errors found by translators (and unfuzzy translations)
+  * Fix build error
+
+ -- Afif Elghraoui <afif@debian.org>  Sun, 26 Jun 2016 14:32:23 -0700
+
+adduser (3.114) unstable; urgency=medium
+
+  * QA upload.
+  * Set the maintainer to Debian QA Team and remove the
+    Uploaders field.
+  * Drop unnecessary versxioned relations to other packages.
+  * install-manpages.pl: Pass "-n" to gzip to omit timestamps
+    from the compressed files.
+  * install-manpages.pl: Create directories as needed.
+  * Rewrite debian/rules to use debhelper 9.
+  * Apply patch from Antonio Terceiro to add autopkgtests.
+  * Suggest perl instead of perl-modules.
+  * Set the source format to 3.0 (native).
+  * Drop irrelevant lintian overrides.
+  * Drop part of the postrm, which is now inserted by debhelper.
+  * Drop dependencies that debhelper inserts via ${misc:Depends}.
+
+ -- Niels Thykier <niels@thykier.net>  Sat, 12 Mar 2016 15:53:58 +0000
+
 adduser (3.113+nmu3pexip1) pexip; urgency=low
 
   * Migrate to Jessie

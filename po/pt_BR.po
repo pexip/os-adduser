@@ -3,7 +3,7 @@
 # Cesar Eduardo Barros <cesarb@web4u.com.br>, 2000.
 # André Luís Lopes <andreop@debian.org>, 2004.
 # Éverton Arruda <root@earruda.eti.br>, 2010.
-# Adriano Rafael Gomes <adrianorg@gmail.com>, 2010.
+# Adriano Rafael Gomes <adrianorg@arg.eti.br>, 2010-2016.
 #
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -21,11 +21,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser\n"
+"Project-Id-Version: adduser 3.105\n"
 "Report-Msgid-Bugs-To: adduser-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2010-11-21 17:13-0400\n"
-"PO-Revision-Date: 2010-11-15 19:50-0200\n"
-"Last-Translator: Adriano Rafael Gomes <adrianorg@gmail.com>\n"
+"POT-Creation-Date: 2016-05-29 07:48+0200\n"
+"PO-Revision-Date: 2016-06-17 18:20+0200\n"
+"Last-Translator: Adriano Rafael Gomes <adrianorg@arg.eti.br>\n"
 "Language-Team: Brazilian Portuguese <debian-l10n-portuguese@lists.debian."
 "org>\n"
 "Language: pt_BR\n"
@@ -482,13 +482,13 @@ msgstr ""
 msgid ""
 "adduser [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
 "[--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup GROUP | --gid ID]\n"
-"[--disabled-password] [--disabled-login] USER\n"
+"[--disabled-password] [--disabled-login] [--add_extra_groups] USER\n"
 "   Add a normal user\n"
 "\n"
 "adduser --system [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
 "[--gecos GECOS] [--group | --ingroup GROUP | --gid ID] [--disabled-"
 "password]\n"
-"[--disabled-login] USER\n"
+"[--disabled-login] [--add_extra_groups] USER\n"
 "   Add a system user\n"
 "\n"
 "adduser --group [--gid ID] GROUP\n"
@@ -512,13 +512,13 @@ msgid ""
 msgstr ""
 "adduser [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
 "[--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup GROUP | --gid ID]\n"
-"[--disabled-password] [--disabled-login] USUÁRIO\n"
+"[--disabled-password] [--disabled-login] [--add_extra_groups] USUÁRIO\n"
 "   Adiciona um usuário normal\n"
 "\n"
 "adduser --system [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
 "[--gecos GECOS] [--group | --ingroup GRUPO | --gid ID] [--disabled-"
 "password]\n"
-"[--disabled-login] USUÁRIO\n"
+"[--disabled-login] [--add_extra_groups] USUÁRIO\n"
 "   Adiciona um usuário de sistema\n"
 "\n"
 "adduser --group [--gid ID] GRUPO\n"

@@ -1093,10 +1093,10 @@ msgstr "B<FIRST_UID> y B<LAST_UID>"
 #: ../adduser.conf.5:74
 msgid ""
 "specify an inclusive range of UIDs from which normal user's UIDs can be "
-"dynamically allocated. Default to I<1000> - I<29999>."
+"dynamically allocated. Default to I<1000> - I<59999>."
 msgstr ""
 "especifica un rango dinámico de identificadores para usuarios normales "
-"(ambos incluidos). Por omisión es I<1000> - I<29999>."
+"(ambos incluidos). Por omisión es I<1000> - I<59999>."
 
 # type: TP
 #. type: TP
@@ -1127,11 +1127,11 @@ msgstr "B<FIRST_GID> y B<LAST_GID>"
 #: ../adduser.conf.5:84
 msgid ""
 "specify an inclusive range of GIDs from which normal group's GIDs can be "
-"dynamically allocated. Default to I<1000> - I<29999>."
+"dynamically allocated. Default to I<1000> - I<59999>."
 msgstr ""
 "define un rango inclusivo de números GID del cual se pueden asignar "
 "dinámicamente números GID de grupo normales. El valor por omisión es I<1000> "
-"- I<29999>."
+"- I<59999>."
 
 # type: TP
 #. type: TP

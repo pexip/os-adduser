@@ -15,10 +15,10 @@
 # Ossama M. Khayat <okhayat@yahoo.com>, 2007.
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser\n"
+"Project-Id-Version: adduser 3.104\n"
 "Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
 "POT-Creation-Date: 2011-06-13 19:26+0000\n"
-"PO-Revision-Date: 2007-07-06 15:43+0300\n"
+"PO-Revision-Date: 2016-06-17 18:06+0200\n"
 "Last-Translator: Ossama M. Khayat <okhayat@yahoo.com>\n"
 "Language-Team: Arabic <support@arabeyes.org>\n"
 "Language: ar\n"
