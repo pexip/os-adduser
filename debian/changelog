@@ -1,3 +1,9 @@
+adduser (3.115pexip1) pexip; urgency=medium
+
+  * Migrate to Stretch
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 10 Jul 2018 00:30:09 +0000
+
 adduser (3.115) unstable; urgency=medium
 
   [ Afif Elghraoui ]
