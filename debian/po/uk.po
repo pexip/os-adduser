@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.59\n"
 "Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
-"POT-Creation-Date: 2011-06-13 19:26+0000\n"
+"POT-Creation-Date: 2018-09-15 15:13-0400\n"
 "PO-Revision-Date: 2016-06-17 18:16+0200\n"
 "Last-Translator: Eugeniy Meshcheryakov <eugen@univ.kiev.ua>\n"
 "Language-Team: Ukrainian\n"
@@ -27,6 +27,12 @@ msgstr ""
 "Plural-Forms:  nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. Type: title
+#. Description
+#: ../templates:2001
+msgid "Adduser"
+msgstr ""
 
 #. Type: boolean
 #. Description

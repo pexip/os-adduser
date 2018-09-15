@@ -9,7 +9,7 @@
 
 Template: adduser/title
 Type: title
-Description: Adduser
+_Description: Adduser
 
 Template: adduser/homedir-permission
 Type: boolean

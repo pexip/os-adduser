@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.112+nmu2\n"
 "Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
-"POT-Creation-Date: 2011-06-13 19:26+0000\n"
+"POT-Creation-Date: 2018-09-15 15:13-0400\n"
 "PO-Revision-Date: 2016-06-17 18:13+0200\n"
 "Last-Translator: Wojciech Zareba <wojtekz@comp.waw.pl>\n"
 "Language-Team: Polish <debian-l10n-polish@lists.debian.org>\n"
@@ -26,6 +26,12 @@ msgstr ""
 "Content-Type: text/plain; charset=ISO-8859-2\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#. Type: title
+#. Description
+#: ../templates:2001
+msgid "Adduser"
+msgstr ""
 
 #. Type: boolean
 #. Description

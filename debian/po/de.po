@@ -1,23 +1,28 @@
 # German translation of adduser templates
 # Daniel Knabl <daniel@knabl.com>, 2005.
 # Tobias Toedter <t.toedter@gmx.net>, 2006.
-# Helge Kreutzmann <debian@helgefjell.de>, 2007.
+# Helge Kreutzmann <debian@helgefjell.de>, 2007, 2018.
 # This file is distributed under the same license as the adduser package.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser 3.103\n"
+"Project-Id-Version: adduser 3.117\n"
 "Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
-"POT-Creation-Date: 2011-06-13 19:26+0000\n"
-"PO-Revision-Date: 2007-07-10 19:01+0200\n"
+"POT-Creation-Date: 2018-02-02 16:43+0000\n"
+"PO-Revision-Date: 2018-05-06 08:46+0200\n"
 "Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: KBabel 1.10.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Type: title
+#. Description
+#: ../templates:2001
+msgid "Adduser"
+msgstr "Adduser"
 
 #. Type: boolean
 #. Description

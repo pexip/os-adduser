@@ -23,7 +23,7 @@ update: adduser.pot
 
 adduser.pot: $(SOURCES)
 	$(XGETTEXT) -c -L Perl -kgtx \
-	--msgid-bugs-address=adduser-devel@lists.alioth.debian.org \
+	--msgid-bugs-address=adduser@packages.debian.org \
 	-o $@ $(SOURCES)
 
 install: all

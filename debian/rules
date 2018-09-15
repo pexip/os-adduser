@@ -1,7 +1,9 @@
 #!/usr/bin/make -f
 
+include /usr/share/dpkg/pkg-info.mk
+
 package = adduser
-version = $(shell dpkg-parsechangelog | awk '/^Version/{print $$2}')
+version = $(DEB_VERSION_UPSTREAM)
 
 %:
 	dh $@

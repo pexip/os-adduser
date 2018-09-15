@@ -5,19 +5,21 @@
 # Hiei Xu <nicky@mail.edu.cn>, 2004.
 # Carlos Z.F. Liu <carlos_liu@yahoo.com>, 2004.
 # Aron Xu <happyaron.xu@gmail.com>, 2009.
+# Boyuan Yang <073plan@gmail.com>, 2018.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser 3.112\n"
-"Report-Msgid-Bugs-To: adduser-devel@lists.alioth.debian.org\n"
-"POT-Creation-Date: 2010-11-21 17:13-0400\n"
-"PO-Revision-Date: 2010-11-13 23:30+0800\n"
+"Project-Id-Version: adduser 3.118\n"
+"Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
+"POT-Creation-Date: 2016-06-17 18:51+0200\n"
+"PO-Revision-Date: 2018-08-30 15:08-0400\n"
 "Last-Translator: Aron Xu <happyaron.xu@gmail.com>\n"
 "Language-Team: Chinese (simplified) <i18n-zh@googlegroups.com>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.1.1\n"
 
 #. everyone can issue "--help" and "--version", but only root can go on
 #: ../adduser:150
@@ -69,7 +71,7 @@ msgstr "组\"%s\"已经存在，但是 GID 不同。退出。\n"
 #: ../adduser:286 ../adduser:316
 #, perl-format
 msgid "The GID `%s' is already in use.\n"
-msgstr "GID \" %s\"已被占用。\n"
+msgstr "GID \"%s\"已被占用。\n"
 
 #: ../adduser:294
 #, perl-format
@@ -228,15 +230,15 @@ msgstr "选项组合无效\n"
 
 #: ../adduser:547
 msgid "unexpected failure, nothing done\n"
-msgstr "未知错误，操作取消\n"
+msgstr "未预料的错误，操作取消\n"
 
 #: ../adduser:548
 msgid "unexpected failure, passwd file missing\n"
-msgstr "未知错误，passwd 文件遗失\n"
+msgstr "未预料的错误，passwd 文件缺失\n"
 
 #: ../adduser:549
 msgid "passwd file busy, try again\n"
-msgstr "passwd 文件忙，请再试\n"
+msgstr "passwd 文件忙，请再试一次\n"
 
 #: ../adduser:550
 msgid "invalid argument to option\n"
@@ -264,12 +266,12 @@ msgstr "正在添加用户\"%s\"到附加组...\n"
 #: ../adduser:614
 #, perl-format
 msgid "Setting quota for user `%s' to values of user `%s' ...\n"
-msgstr "设定磁盘配额，用户\"%s\"的配额与\"%s\"的相同 ...\n"
+msgstr "设定磁盘配额，用户\"%s\"的配额与用户\"%s\"的相同 ...\n"
 
 #: ../adduser:651
 #, perl-format
 msgid "Not creating home directory `%s'.\n"
-msgstr "无法创建主目录\"%s\"\n"
+msgstr "无法创建主目录\"%s\"。\n"
 
 #: ../adduser:654
 #, perl-format
@@ -335,7 +337,7 @@ msgid ""
 "It is not a dir, file, or symlink.\n"
 msgstr ""
 "无法处理 %s。\n"
-"它不是目录，文件或链接。\n"
+"它不是目录、文件或链接。\n"
 
 #: ../adduser:868
 #, perl-format
@@ -352,7 +354,7 @@ msgstr ""
 
 #: ../adduser:876
 msgid "Allowing use of questionable username.\n"
-msgstr "允许使用可疑的用户名.\n"
+msgstr "允许使用可疑的用户名。\n"
 
 #: ../adduser:880
 #, perl-format
@@ -383,7 +385,7 @@ msgstr "停止：%s\n"
 #: ../adduser:960
 #, perl-format
 msgid "Removing directory `%s' ...\n"
-msgstr "删除目录'%s'。\n"
+msgstr "正在删除目录'%s'...\n"
 
 #: ../adduser:964 ../deluser:358
 #, perl-format
@@ -449,14 +451,16 @@ msgstr ""
 #: ../adduser:1006
 msgid ""
 "adduser [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
-"[--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup GROUP | --gid ID]\n"
-"[--disabled-password] [--disabled-login] USER\n"
+"[--firstuid ID] [--lastuid ID] [--gecos GECOS] [--ingroup GROUP | --gid "
+"ID]\n"
+"[--disabled-password] [--disabled-login] [--add_extra_groups] USER\n"
 "   Add a normal user\n"
 "\n"
-"adduser --system [--home DIR] [--shell SHELL] [--no-create-home] [--uid ID]\n"
+"adduser --system [--home DIR] [--shell SHELL] [--no-create-home] [--uid "
+"ID]\n"
 "[--gecos GECOS] [--group | --ingroup GROUP | --gid ID] [--disabled-"
 "password]\n"
-"[--disabled-login] USER\n"
+"[--disabled-login] [--add_extra_groups] USER\n"
 "   Add a system user\n"
 "\n"
 "adduser --group [--gid ID] GROUP\n"
@@ -481,11 +485,12 @@ msgstr ""
 "adduser [--home 主目录] [--shell SHELL] [--no-create-home]\n"
 "[--uid ID] [--firstuid ID] [--lastuid ID] [--gecos GECOS]\n"
 "[--ingroup 用户组 | --gid ID][--disabled-password] [--disabled-login]\n"
-" 用户名\t添加一个普通用户\n"
+"[--add_extra_groups] 用户名\n"
+"  添加一个普通用户\n"
 "\n"
 "adduser --system [--home 主目录] [--shell SHELL] [--no-create-home]\n"
 "[--uid ID] [--gecos GECOS] [--group | --ingroup 用户组 | --gid ID]\n"
-"[--disabled-password] [--disabled-login] 用户名\n"
+"[--disabled-password] [--disabled-login] [--add_extra_groups] 用户名\n"
 "\t添加一个系统用户\n"
 "\n"
 "adduser --group [--gid ID] 用户组名\n"
@@ -498,7 +503,7 @@ msgstr ""
 "adduser 用户名 用户组名\n"
 "\t将一个已存在的用户添加至一个已存在的用户组\n"
 "\n"
-"常规设置:\n"
+"常规设置：\n"
 "  --quiet | -q\t\t不在标准输出中给出进度信息\n"
 "  --force-badname\t允许用户名不匹配：\n"
 "\t\t\tNAME_REGEX[_SYSTEM] 配置变量\n"
@@ -528,12 +533,12 @@ msgstr "请输入要删除的用户名： "
 msgid ""
 "In order to use the --remove-home, --remove-all-files, and --backup "
 "features,\n"
-"you need to install the `perl-modules' package. To accomplish that, run\n"
-"apt-get install perl-modules.\n"
+"you need to install the `perl' package. To accomplish that, run\n"
+"apt-get install perl.\n"
 msgstr ""
 "为了使用 --remove-home，--remove-all-files，和 --backup 功能，\n"
-"您需要安装\"perl-modules\"软件包。要获得它，请运行\n"
-"apt-get install perl-modules\n"
+"您需要安装\"perl\"软件包。要获得它，请运行\n"
+"apt-get install perl\n"
 
 #: ../deluser:219
 #, perl-format

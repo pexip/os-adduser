@@ -1,3 +1,54 @@
+adduser (3.118) unstable; urgency=low
+
+  * Team upload
+
+  [ Afif Elghraoui ]
+  * Remove myself from uploaders
+
+  [ Boyuan Yang ]
+  * po: Refresh po files
+  * po: Update Simplified Chinese (zh_CN) translation
+  * debian/rules: Avoid invoking dpkg-parsechangelog directly
+  * debian/control: Bump Standards-Version to 4.2.1.
+
+  [ Helge Kreutzmann ]
+  * Update German debconf translation (Closes: #898034)
+
+  [ Frans Spiesschaert ]
+  * Update Dutch debconf translation (Closes: #898769)
+
+  [ Julien Patriarca ]
+  * Update French debconf translation (Closes: #901031)
+
+ -- Afif Elghraoui <afif@debian.org>  Sat, 15 Sep 2018 15:12:39 -0400
+
+adduser (3.117) unstable; urgency=medium
+
+  [ Marc Haber ]
+  * new maintainer address, remove references to devel mailing list
+  * let control file point to salsa instead
+  * make Description "Adduser" translateable and lintian happy
+
+  [ Afif Elghraoui ]
+  * Incorporate updated German translation (Closes: #885082)
+
+ -- Marc Haber <mh+debian-packages@zugschlus.de>  Fri, 02 Feb 2018 17:42:15 +0100
+
+adduser (3.116) unstable; urgency=medium
+
+  * Advise installation of 'perl' rather than 'perl-modules'
+    (Closes: #840982)
+  * Improve distinction between informational and essential messages
+    (Closes: #763055)
+  * Improve message accompanying error code for creating system user
+    (Closes: #708073, #759740)
+  * testsuite: add current directory to Perl module search path
+  * Use /usr/sbin/nologin instead of /bin/false for default system shell
+    (Closes: #845791)
+  * Bump Standards-Version to 4.0.1
+
+ -- Afif Elghraoui <afif@debian.org>  Sat, 12 Aug 2017 16:05:34 -0400
+
 adduser (3.115) unstable; urgency=medium
 
   [ Afif Elghraoui ]

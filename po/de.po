@@ -1,20 +1,20 @@
 # German translation of adduser
-# Copyright (C) 2000, 2006 Free Software Foundation, Inc.
-# Copyright (C) Roland Bauerschmidt <roland@copyleft.de>, 2000.
-# Copyright (C) Tobias Quathamer <toddy@debian.org>, 2006, 2010.
+# Copyright © 2000, 2006 Free Software Foundation, Inc.
+# Copyright © Roland Bauerschmidt <roland@copyleft.de>, 2000.
+# Copyright © Dr. Tobias Quathamer <toddy@debian.org>, 2006, 2010, 2017.
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser 3.95\n"
-"Report-Msgid-Bugs-To: adduser-devel@lists.alioth.debian.org\n"
+"Project-Id-Version: adduser 3.116\n"
+"Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
 "POT-Creation-Date: 2016-06-17 18:51+0200\n"
-"PO-Revision-Date: 2016-06-17 19:04+0200\n"
-"Last-Translator: Tobias Quathamer <toddy@debian.org>\n"
+"PO-Revision-Date: 2017-12-19 10:27+0100\n"
+"Last-Translator: Dr. Tobias Quathamer <toddy@debian.org>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 1.1\n"
+"X-Generator: Lokalize 2.0\n"
 "Plural-Forms:  nplurals=2; plural=(n != 1);\n"
 
 #. everyone can issue "--help" and "--version", but only root can go on
@@ -559,12 +559,12 @@ msgstr "Geben Sie den Namen des Benutzers ein, der entfernt werden soll: "
 msgid ""
 "In order to use the --remove-home, --remove-all-files, and --backup "
 "features,\n"
-"you need to install the `perl-modules' package. To accomplish that, run\n"
-"apt-get install perl-modules.\n"
+"you need to install the `perl' package. To accomplish that, run\n"
+"apt-get install perl.\n"
 msgstr ""
 "Um die Optionen --remove-home, --remove-all-files und --backup nutzen zu\n"
-"können, müssen Sie das »perl-modules«-Paket installieren. Um dies zu tun,\n"
-"führen Sie den Befehl »apt-get install perl-modules« aus.\n"
+"können, müssen Sie das »perl«-Paket installieren. Um dies zu tun,\n"
+"führen Sie den Befehl »apt-get install perl« aus.\n"
 
 #: ../deluser:219
 #, perl-format
@@ -805,3 +805,8 @@ msgstr "Unbekannte Variable »%s« in »%s«, Zeile %d.\n"
 #, perl-format
 msgid "Could not find program named `%s' in $PATH.\n"
 msgstr "Kein Programm mit dem Namen »%s« in Verzeichnisliste $PATH gefunden.\n"
+
+#~ msgid "The user `%s' already exists, but is not a system user. Exiting.\n"
+#~ msgstr ""
+#~ "Der Benutzer »%s« existiert bereits, ist aber kein Systembenutzer. "
+#~ "Programmende.\n"

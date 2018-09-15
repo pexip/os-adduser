@@ -20,7 +20,7 @@ for a in off on; do
     fi
     echo
     echo "Starting $i (shadow $a)"
-    /usr/bin/perl $i
+    /usr/bin/perl -I. $i
     if [ "$?" != "0" ]; then
       FAILED="$FAILED $i($a)"
     fi
