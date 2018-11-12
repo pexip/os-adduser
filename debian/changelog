@@ -1,3 +1,9 @@
+adduser (3.115pexip2) pexip; urgency=medium
+
+  * Update LAST_[GU]ID on upgrade
+
+ -- John-Mark Bell <jmb@pexip.com>  Mon, 12 Nov 2018 18:04:58 +0000
+
 adduser (3.115pexip1) pexip; urgency=medium
 
   * Migrate to Stretch

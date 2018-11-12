@@ -36,4 +36,10 @@ then
 	fi
 fi
 
+if [ "$1" = "configure" ]; then
+	if LC_ALL=C dpkg --compare-versions "$2" lt-nl "3.115pexip1~"; then
+		sed -e 's/\(LAST_[GU]ID\)=29999/\1=59999/' -i /etc/adduser.conf
+	fi
+fi
+
 #DEBHELPER#
