@@ -274,7 +274,7 @@ msgstr ""
 #: ../adduser.8:162
 msgid ""
 "A home directory is created by the same rules as for normal users.  The new "
-"system user will have the shell I</bin/false> (unless overridden with the "
+"system user will have the shell I</usr/sbin/nologin> (unless overridden with the "
 "B<--shell> option), and have logins disabled.  Skeletal configuration files "
 "are not copied."
 msgstr ""

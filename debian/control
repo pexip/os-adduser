@@ -2,14 +2,13 @@ Source: adduser
 Section: admin
 Priority: important
 Maintainer: Pexip AS <packaging@pexip.com>
-XSBC-Pexip-Original-Maintainer: Debian Adduser Developers <adduser-devel@lists.alioth.debian.org>
-XSBC-Pexip-Original-Uploaders: Afif Elghraoui <afif@debian.org>
-Standards-Version: 3.9.8
+XSBC-Pexip-Original-Maintainer: Debian Adduser Developers <adduser@packages.debian.org>
+XSBC-Pexip-Original-Uploaders: Marc Haber <mh+debian-packages@zugschlus.de>
+Standards-Version: 4.2.1
 Build-Depends: po-debconf, debhelper (>= 9)
 Build-Depends-Indep: gettext, po4a
-Vcs-Git: https://anonscm.debian.org/git/adduser/adduser.git
-Vcs-Browser: https://anonscm.debian.org/cgit/adduser/adduser.git
-Homepage: http://alioth.debian.org/projects/adduser/
+Vcs-Browser: https://salsa.debian.org/debian/adduser
+Vcs-Git: https://salsa.debian.org/debian/adduser.git
 XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: adduser
@@ -36,6 +35,3 @@ Description: add and remove users and groups
  and mail spool or all the files they own on the system.
  .
  A custom script can be executed after each of the commands.
- .
-  Development mailing list:
-    http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/

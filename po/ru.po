@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version:adduser 3.115\n"
-"Report-Msgid-Bugs-To: adduser-devel@lists.alioth.debian.org\n"
+"Report-Msgid-Bugs-To: adduser@packages.debian.org\n"
 "POT-Creation-Date: 2016-05-29 07:48+0200\n"
 "PO-Revision-Date: 2016-06-17 18:18+0200\n"
 "Last-Translator: Yuri Kozlov <yuray@komyakino.ru>\n"
@@ -549,12 +549,12 @@ msgstr "Введите имя пользователя, которого вы х
 msgid ""
 "In order to use the --remove-home, --remove-all-files, and --backup "
 "features,\n"
-"you need to install the `perl-modules' package. To accomplish that, run\n"
-"apt-get install perl-modules.\n"
+"you need to install the `perl' package. To accomplish that, run\n"
+"apt-get install perl.\n"
 msgstr ""
 "Чтобы использовать параметры --remove-home, --remove-all-files и --backup\n"
-"вам требуется установить пакет perl-modules. Для этого выполните:\n"
-"apt-get install perl-modules\n"
+"вам требуется установить пакет perl. Для этого выполните:\n"
+"apt-get install perl\n"
 
 #: ../deluser:219
 #, perl-format
