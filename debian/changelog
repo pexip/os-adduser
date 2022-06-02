@@ -1,3 +1,9 @@
+adduser (3.118pexip3) pexip; urgency=medium
+
+  * Initial bullseye build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 02 Jun 2022 14:41:59 +0100
+
 adduser (3.118pexip2) pexip; urgency=medium
 
   * Rebuild in buster environment
