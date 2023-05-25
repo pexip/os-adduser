@@ -1,2 +1,3 @@
+AdduserCommon.pm usr/share/perl5/Debian
+adduser.conf etc
 deluser.conf etc
-adduser.conf usr/share/adduser
