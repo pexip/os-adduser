@@ -1,3 +1,10 @@
+adduser (3.118+deb11u1) bullseye; urgency=medium
+
+  * fix command injection vulnerability in deluser
+    (Closes: #940577)
+
+ -- Marc Haber <mh+debian-packages@zugschlus.de>  Mon, 24 Jul 2023 22:12:52 +0200
+
 adduser (3.118) unstable; urgency=low
 
   * Team upload

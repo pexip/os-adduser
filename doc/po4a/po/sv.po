@@ -6,13 +6,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.83 manual\n"
-"POT-Creation-Date: 2016-06-17 18:51+0200\n"
+"POT-Creation-Date: 2023-07-26 20:03+0200\n"
 "PO-Revision-Date: 2010-11-12 18:06+0100\n"
 "Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
 "Language-Team: Swedish <debian-l10n-swedihs@lists.debian.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Swedish\n"
 "X-Poedit-Country: Sweden\n"
@@ -1871,14 +1871,15 @@ msgstr ""
 #| msgid ""
 #| "/etc/deluser.conf - configuration file for B<deluser(8)> and "
 #| "B<delgroup(8)>."
-msgid "/etc/deluser.conf Default configuration file for deluser and delgroup"
+msgid ""
+"I</etc/deluser.conf> Default configuration file for deluser and delgroup"
 msgstr ""
 "/etc/deluser.conf - konfigurationsfil för B<deluser(8)> och B<delgroup(8)>."
 
 #. type: TP
 #: ../deluser.8:180
 #, no-wrap
-msgid "/usr/local/sbin/deluser.local"
+msgid "I</usr/local/sbin/deluser.local>"
 msgstr ""
 
 # type: Plain text

@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser-manpage 3.115\n"
-"POT-Creation-Date: 2016-06-17 18:51+0200\n"
+"POT-Creation-Date: 2016-06-17 19:12+0200\n"
 "PO-Revision-Date: 2016-06-17 19:20+0200\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <traduz@debianpt.org>\n"
@@ -376,13 +376,13 @@ msgstr ""
 #: ../adduser.8:162
 msgid ""
 "A home directory is created by the same rules as for normal users.  The new "
-"system user will have the shell I</usr/sbin/nologin> (unless overridden with "
-"the B<--shell> option), and have logins disabled.  Skeletal configuration "
-"files are not copied."
+"system user will have the shell I</usr/sbin/nologin> (unless overridden with the "
+"B<--shell> option), and have logins disabled.  Skeletal configuration files "
+"are not copied."
 msgstr ""
 "É criado um directório home pelas mesmas regras como para utilizadores "
-"normais. O novo utilizador de sistema irá ter a shell I</usr/sbin/nologin> "
-"(a menos que seja sobreposto pela opção B<--shell>), e irá ter os logins "
+"normais. O novo utilizador de sistema irá ter a shell I</usr/sbin/nologin> (a menos "
+"que seja sobreposto pela opção B<--shell>), e irá ter os logins "
 "desactivados. Os ficheiros de configuração esqueleto não são copiados."
 
 # type: SS
@@ -860,7 +860,8 @@ msgstr ""
 
 # type: SH
 #. type: SH
-#: ../adduser.8:304 ../adduser.conf.5:147 ../deluser.8:177 ../deluser.conf.5:84
+#: ../adduser.8:304 ../adduser.conf.5:147 ../deluser.8:177
+#: ../deluser.conf.5:84
 #, no-wrap
 msgid "FILES"
 msgstr "FICHEIROS"
@@ -891,7 +892,8 @@ msgstr "Adições personalizadas opcionais"
 
 # type: SH
 #. type: SH
-#: ../adduser.8:312 ../adduser.conf.5:149 ../deluser.8:184 ../deluser.conf.5:86
+#: ../adduser.8:312 ../adduser.conf.5:149 ../deluser.8:184
+#: ../deluser.conf.5:86
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "VEJA TAMBÉM"
@@ -1832,19 +1834,16 @@ msgstr ""
 # type: Plain text
 #. type: Plain text
 #: ../deluser.8:180
-#, fuzzy
-#| msgid ""
-#| "I</etc/deluser.conf> Default configuration file for deluser and delgroup"
-msgid "/etc/deluser.conf Default configuration file for deluser and delgroup"
+msgid ""
+"I</etc/deluser.conf> Default configuration file for deluser and delgroup"
 msgstr ""
 "I</etc/deluser.conf> Ficheiro de configuração predefinido para deluser e "
 "delgroup"
 
 #. type: TP
 #: ../deluser.8:180
-#, fuzzy, no-wrap
-#| msgid "I</usr/local/sbin/deluser.local>"
-msgid "/usr/local/sbin/deluser.local"
+#, no-wrap
+msgid "I</usr/local/sbin/deluser.local>"
 msgstr "I</usr/local/sbin/deluser.local>"
 
 # type: Plain text

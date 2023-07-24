@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.115\n"
-"POT-Creation-Date: 2016-06-17 18:51+0200\n"
+"POT-Creation-Date: 2016-06-17 19:12+0200\n"
 "PO-Revision-Date: 2016-06-17 19:16+0200\n"
 "Last-Translator: Holger Wansing <linux@wansing-online.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
@@ -352,15 +352,15 @@ msgstr ""
 #: ../adduser.8:162
 msgid ""
 "A home directory is created by the same rules as for normal users.  The new "
-"system user will have the shell I</usr/sbin/nologin> (unless overridden with "
-"the B<--shell> option), and have logins disabled.  Skeletal configuration "
-"files are not copied."
+"system user will have the shell I</usr/sbin/nologin> (unless overridden with the "
+"B<--shell> option), and have logins disabled.  Skeletal configuration files "
+"are not copied."
 msgstr ""
 "Das Home-Verzeichnis wird nach den gleichen Regeln wie denen für einfache "
-"Benutzer erzeugt. Dem neuen Benutzer wird als Shell I</usr/sbin/nologin> "
-"zugewiesen (es sei denn, das wird durch die Option B<--shell> geändert) und "
-"normale Anmeldungen werden deaktiviert. In sein Home-Verzeichnis werden "
-"keine Konfigurationsdateien aus /etc/skel kopiert."
+"Benutzer erzeugt. Dem neuen Benutzer wird als Shell I</usr/sbin/nologin> zugewiesen "
+"(es sei denn, das wird durch die Option B<--shell> geändert) und normale "
+"Anmeldungen werden deaktiviert. In sein Home-Verzeichnis werden keine "
+"Konfigurationsdateien aus /etc/skel kopiert."
 
 #. type: SS
 #: ../adduser.8:162
@@ -793,7 +793,8 @@ msgstr ""
 "B<adduser> ohne B<--quiet> aufrufen, um mehr Einzelheiten auszugeben."
 
 #. type: SH
-#: ../adduser.8:304 ../adduser.conf.5:147 ../deluser.8:177 ../deluser.conf.5:84
+#: ../adduser.8:304 ../adduser.conf.5:147 ../deluser.8:177
+#: ../deluser.conf.5:84
 #, no-wrap
 msgid "FILES"
 msgstr "DATEIEN"
@@ -821,7 +822,8 @@ msgid "Optional custom add-ons."
 msgstr "Optionale benutzerspezifische Add-Ons."
 
 #. type: SH
-#: ../adduser.8:312 ../adduser.conf.5:149 ../deluser.8:184 ../deluser.conf.5:86
+#: ../adduser.8:312 ../adduser.conf.5:149 ../deluser.8:184
+#: ../deluser.conf.5:86
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "SIEHE AUCH"
@@ -1670,9 +1672,9 @@ msgid ""
 "The required perl-package 'perl modules' is not installed. This package is "
 "required to perform the requested actions. No action was performed."
 msgstr ""
-"Das erforderlich Perl-Paket »perl« ist nicht installiert. Dieses Paket ist "
-"für die Ausführung der gewählten Aktionen erforderlich. Es wurde nichts "
-"unternommen."
+"Das erforderlich Perl-Paket »perl« ist nicht installiert. Dieses "
+"Paket ist für die Ausführung der gewählten Aktionen erforderlich. Es wurde "
+"nichts unternommen."
 
 #. type: TP
 #: ../deluser.8:173
@@ -1691,18 +1693,15 @@ msgstr ""
 
 #. type: Plain text
 #: ../deluser.8:180
-#, fuzzy
-#| msgid ""
-#| "I</etc/deluser.conf> Default configuration file for deluser and delgroup"
-msgid "/etc/deluser.conf Default configuration file for deluser and delgroup"
+msgid ""
+"I</etc/deluser.conf> Default configuration file for deluser and delgroup"
 msgstr ""
 "I</etc/deluser.conf> - Standard-Konfigurationsdatei für deluser und delgroup"
 
 #. type: TP
 #: ../deluser.8:180
-#, fuzzy, no-wrap
-#| msgid "I</usr/local/sbin/deluser.local>"
-msgid "/usr/local/sbin/deluser.local"
+#, no-wrap
+msgid "I</usr/local/sbin/deluser.local>"
 msgstr "I</usr/local/sbin/deluser.local>"
 
 #. type: Plain text
