@@ -27,7 +27,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.113\n"
-"POT-Creation-Date: 2016-06-17 18:51+0200\n"
+"POT-Creation-Date: 2023-07-26 20:03+0200\n"
 "PO-Revision-Date: 2011-07-16 16:59+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"
@@ -1885,7 +1885,8 @@ msgstr ""
 #| msgid ""
 #| "/etc/deluser.conf - configuration file for B<deluser(8)> and "
 #| "B<delgroup(8)>."
-msgid "/etc/deluser.conf Default configuration file for deluser and delgroup"
+msgid ""
+"I</etc/deluser.conf> Default configuration file for deluser and delgroup"
 msgstr ""
 "/etc/deluser.conf - Fichero de configuración para B<deluser(8)> y "
 "B<delgroup(8)>"
@@ -1893,7 +1894,7 @@ msgstr ""
 #. type: TP
 #: ../deluser.8:180
 #, no-wrap
-msgid "/usr/local/sbin/deluser.local"
+msgid "I</usr/local/sbin/deluser.local>"
 msgstr ""
 
 # type: Plain text

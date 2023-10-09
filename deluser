@@ -348,13 +348,6 @@ if($action eq "deluser") {
       }
     }
 
-    if (system("crontab -l $user >/dev/null 2>&1") == 0) {
-      # crontab -l returns 1 if there is no crontab
-      my $crontab = &which('crontab');
-      &systemcall($crontab, "-r", $user);
-      s_print (gtx("Removing crontab ...\n"));
-    }
-
     s_printf (gtx("Removing user `%s' ...\n"),$user);
     my @members = get_group_members($maingroup);
     if (@members == 0) {

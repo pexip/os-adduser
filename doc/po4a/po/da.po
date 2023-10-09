@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.115\n"
-"POT-Creation-Date: 2016-06-17 18:51+0200\n"
+"POT-Creation-Date: 2016-06-17 19:12+0200\n"
 "PO-Revision-Date: 2016-06-17 20:33+0200\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: Danish <debian-l10n-danish@lists.debian.org>\n"
@@ -336,13 +336,13 @@ msgstr ""
 #: ../adduser.8:162
 msgid ""
 "A home directory is created by the same rules as for normal users.  The new "
-"system user will have the shell I</usr/sbin/nologin> (unless overridden with "
-"the B<--shell> option), and have logins disabled.  Skeletal configuration "
-"files are not copied."
+"system user will have the shell I</usr/sbin/nologin> (unless overridden with the "
+"B<--shell> option), and have logins disabled.  Skeletal configuration files "
+"are not copied."
 msgstr ""
 "En hjemmemappe oprettes med de samme regler som for normale brugere. Den nye "
-"systembruger vil have skallen I</usr/sbin/nologin> (med mindre overskrevet "
-"med tilvalget B<--shell>), og have logind'er deaktiveret. "
+"systembruger vil have skallen I</usr/sbin/nologin> (med mindre overskrevet med "
+"tilvalget B<--shell>), og have logind'er deaktiveret. "
 "Skeletkonfigurationsfiler kopieres ikke."
 
 #. type: SS
@@ -764,7 +764,8 @@ msgstr ""
 "Du kan overveje at fjerne B<--quiet> for at gøre adduser mere uddybende."
 
 #. type: SH
-#: ../adduser.8:304 ../adduser.conf.5:147 ../deluser.8:177 ../deluser.conf.5:84
+#: ../adduser.8:304 ../adduser.conf.5:147 ../deluser.8:177
+#: ../deluser.conf.5:84
 #, no-wrap
 msgid "FILES"
 msgstr "FILER"
@@ -792,7 +793,8 @@ msgid "Optional custom add-ons."
 msgstr "Valgfrie tilpassede udvidelser."
 
 #. type: SH
-#: ../adduser.8:312 ../adduser.conf.5:149 ../deluser.8:184 ../deluser.conf.5:86
+#: ../adduser.8:312 ../adduser.conf.5:149 ../deluser.8:184
+#: ../deluser.conf.5:86
 #, no-wrap
 msgid "SEE ALSO"
 msgstr "SE OGSÅ"
@@ -1632,18 +1634,15 @@ msgstr ""
 
 #. type: Plain text
 #: ../deluser.8:180
-#, fuzzy
-#| msgid ""
-#| "I</etc/deluser.conf> Default configuration file for deluser and delgroup"
-msgid "/etc/deluser.conf Default configuration file for deluser and delgroup"
+msgid ""
+"I</etc/deluser.conf> Default configuration file for deluser and delgroup"
 msgstr ""
 "I</etc/deluser.conf> - standardkonfigurationsfil for deluser og delgroup"
 
 #. type: TP
 #: ../deluser.8:180
-#, fuzzy, no-wrap
-#| msgid "I</usr/local/sbin/deluser.local>"
-msgid "/usr/local/sbin/deluser.local"
+#, no-wrap
+msgid "I</usr/local/sbin/deluser.local>"
 msgstr "I</usr/local/sbin/deluser.local>"
 
 #. type: Plain text
@@ -1710,9 +1709,9 @@ msgid ""
 "B<adduser.conf(5);> settings in I<deluser.conf> may overwrite settings made "
 "in I<adduser.conf.>"
 msgstr ""
-"B<deluser(8)> and B<delgroup(8)> læser også I</etc/adduser.conf>, se "
-"B<adduser.conf(5);>-indstillinger i I<deluser.conf> kan overskrive "
-"indstillinger i I<adduser.conf>."
+"B<deluser(8)> and B<delgroup(8)> læser også I</etc/adduser.conf>, se B<adduser."
+"conf(5);>-indstillinger i I<deluser.conf> kan overskrive indstillinger i "
+"I<adduser.conf>."
 
 #. type: TP
 #: ../deluser.conf.5:37

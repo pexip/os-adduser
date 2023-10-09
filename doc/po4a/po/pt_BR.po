@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.113+nmu3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-17 18:51+0200\n"
+"POT-Creation-Date: 2023-07-26 20:03+0200\n"
 "PO-Revision-Date: 2016-06-17 18:31+0200\n"
 "Last-Translator: Felipe Augusto van de Wiel (faw) <faw@cathedrallabs.org>\n"
 "Language-Team: l10n portuguese <debian-l10n-portuguese@lists.debian.org>\n"
@@ -1558,10 +1558,10 @@ msgid ""
 "user. Removing the home directory and mail spool can be achieved using the "
 "B<--remove-home> option."
 msgstr ""
-"Por padrão, B<deluser> irá remover o usuário sem remover o diretório \"home"
-"\", a fila (\"spool\") de e-mail ou qualquer outro arquivo no sistema "
-"pertencente ao usuário. A remoção do diretório \"home\" e da fila (\"spool"
-"\") de e-mail pode ser obtida usando a opção B<--remove-home>."
+"Por padrão, B<deluser> irá remover o usuário sem remover o diretório "
+"\"home\", a fila (\"spool\") de e-mail ou qualquer outro arquivo no sistema "
+"pertencente ao usuário. A remoção do diretório \"home\" e da fila "
+"(\"spool\") de e-mail pode ser obtida usando a opção B<--remove-home>."
 
 # type: Plain text
 #. type: Plain text
@@ -1917,7 +1917,8 @@ msgstr ""
 #| msgid ""
 #| "/etc/deluser.conf - configuration file for B<deluser(8)> and "
 #| "B<delgroup(8)>."
-msgid "/etc/deluser.conf Default configuration file for deluser and delgroup"
+msgid ""
+"I</etc/deluser.conf> Default configuration file for deluser and delgroup"
 msgstr ""
 "/etc/deluser.conf - arquivo de configuração para B<deluser(8)> e "
 "B<delgroup(8)>."
@@ -1925,7 +1926,7 @@ msgstr ""
 #. type: TP
 #: ../deluser.8:180
 #, no-wrap
-msgid "/usr/local/sbin/deluser.local"
+msgid "I</usr/local/sbin/deluser.local>"
 msgstr ""
 
 # type: Plain text

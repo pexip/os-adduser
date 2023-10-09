@@ -1,3 +1,16 @@
+adduser (3.118+deb11u1pexip1) pexip; urgency=medium
+
+  * New upstream release
+
+ -- Steve McIntyre <steve.mcintyre@pexip.com>  Mon, 09 Oct 2023 11:14:31 +0100
+
+adduser (3.118+deb11u1) bullseye; urgency=medium
+
+  * fix command injection vulnerability in deluser
+    (Closes: #940577)
+
+ -- Marc Haber <mh+debian-packages@zugschlus.de>  Mon, 24 Jul 2023 22:12:52 +0200
+
 adduser (3.118pexip5) pexip-bullseye; urgency=medium
 
   * Bullseye rebuild for ARM64 inclusion
