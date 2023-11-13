@@ -1,4 +1,6 @@
-PO4A-HEADER:mode=before;position=VERSION;beginboundary=^\.TH
+PO4A-HEADER:mode=after;position=^\.SH "СМОТРИТЕ ТАКЖЕ";beginboundary=^\.SH
+.SH TRANSLATOR(S)
+
 .\"
 .\" Russian verison:
 .\"   Alexey Mahotkin <alexm@hsys.msk.ru>, 2001
