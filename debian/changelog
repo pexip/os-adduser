@@ -1,3 +1,9 @@
+adduser (3.134pexip1) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 09:50:50 +0000
+
 adduser (3.134) unstable; urgency=medium
 
   * Revert "mark adduser as Protected:yes"
