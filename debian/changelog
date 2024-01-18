@@ -1,3 +1,9 @@
+adduser (3.134pexip3) pexip-bookworm; urgency=medium
+
+  * Restore previous DIR_MODE of 0755
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 18 Jan 2024 10:54:37 +0000
+
 adduser (3.134pexip2) pexip-bookworm; urgency=medium
 
   * Bookworm build for product distribution
