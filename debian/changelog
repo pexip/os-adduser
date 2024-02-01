@@ -1,3 +1,9 @@
+adduser (3.134+pexip24u4) pexip-bookworm; urgency=medium
+
+  * New versioning scheme
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 01 Feb 2024 15:50:52 +0000
+
 adduser (3.134pexip3) pexip-bookworm; urgency=medium
 
   * Restore previous DIR_MODE of 0755
