@@ -9,8 +9,10 @@ use Debian::AdduserCommon;
 my %add_config;
 my %del_config;
 
-preseed_config(("/etc/adduser.conf"),\%add_config);
-preseed_config(("/etc/deluser.conf"),\%del_config);
+my @adduserconf=("/etc/adduser.conf");
+my @deluserconf=("/etc/deluser.conf");
+preseed_config(\@adduserconf,\%add_config);
+preseed_config(\@deluserconf,\%del_config);
 
 my $user_prefix = "addusertest";
 
@@ -129,6 +131,16 @@ sub check_homedir_exist {
   }
   if (! -d $dir) {
     print "check_homedir_exist: there's no home directory $dir\n";
+    return 1;
+  }
+  return 0;
+}
+
+
+sub check_dir_exist {
+  my ($dir) = @_;
+  if (! -d $dir) {
+    print "check_dir_exist: $dir does not exist\n";
     return 1;
   }
   return 0;

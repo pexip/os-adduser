@@ -5,19 +5,28 @@ use diagnostics;
 use strict;
 use warnings;
 
+my $name='duq';
+
 use AdduserTestsCommon;
 
 
 END {
-    remove_tree('/home/foo');
-    remove_tree('/var/mail/foo');
+    remove_tree("/home/$name");
+    remove_tree("/var/mail/$name");
 }
 
-assert_user_does_not_exist('foo');
-assert_command_success('/usr/sbin/adduser', '--quiet', '--system', 'foo');
-assert_user_exists('foo');
+assert_user_does_not_exist($name);
+assert_command_success(
+    '/usr/sbin/adduser',
+    '--stdoutmsglevel=error', '--stderrmsglevel=error',
+    '--system',
+    $name
+);
+assert_user_exists($name);
 
-my $output = `/usr/sbin/deluser --quiet foo 2>&1`;
-is($output, '', 'option "--quiet" silences deluser output under normal use');
+my $output = `/usr/sbin/deluser --stdoutmsglevel=error --stderrmsglevel=error $name 2>&1`;
+is($output, '', 'option "--stdoutmsglevel=error" silences deluser output under normal use');
 
-assert_user_does_not_exist('foo');
+assert_user_does_not_exist($name);
+
+# vim: tabstop=4 shiftwidth=4 expandtab
