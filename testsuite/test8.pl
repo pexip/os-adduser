@@ -17,7 +17,8 @@ my $cmd = "adduser --comment test --disabled-password --add-extra-groups $userna
 
 my %config;
 
-preseed_config(("/etc/adduser.conf"),\%config);
+my @adduserconf=("/etc/adduser.conf");
+preseed_config(\@adduserconf,\%config);
 
 if (!defined (getpwnam($username))) {
 	print "Testing $cmd... ";
@@ -63,7 +64,7 @@ if (defined (getpwnam($username))) {
    print "ok\n";
 }
 
-$cmd = "deluser --remove-home $username";
+$cmd = "deluser $username";
 if (defined (getpwnam($username))) {
 	print "Testing $cmd... ";
 	`$cmd`;
@@ -74,6 +75,7 @@ if (defined (getpwnam($username))) {
 	}
 	assert(check_user_not_exist ($username));
 	print "ok\n";
+	`rm -rf /home/$username`;
 }
 
 $cmd = "delgroup $newgroup";
