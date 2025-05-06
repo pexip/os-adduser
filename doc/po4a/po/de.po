@@ -22,8 +22,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.146\n"
-"POT-Creation-Date: 2025-03-28 14:33+0100\n"
-"PO-Revision-Date: 2025-03-20 17:49+0100\n"
+"POT-Creation-Date: 2025-03-22 10:41+0100\n"
+"PO-Revision-Date: 2025-03-28 20:56+0100\n"
 "Last-Translator: Helge Kreutzmann <debian@helgefjell.de>\n"
 "Language-Team: German <debian-l10n-german@lists.debian.org>\n"
 "Language: de\n"
@@ -2509,48 +2509,46 @@ msgstr ""
 msgid ""
 "adduser.local, deluser.local - hook for local actions in adduser and deluser"
 msgstr ""
+"adduser.local, deluser.local - Einhängepunkte für lokale Aktionen in Adduser und Deluser"
 
 #. type: SY
 #: ../adduser.local.8:10
-#, fuzzy, no-wrap
-#| msgid "adduser"
+#, no-wrap
 msgid "adduser.local"
-msgstr "adduser"
+msgstr "adduser.local"
 
 #. type: OP
 #: ../adduser.local.8:11 ../adduser.local.8:16
 #, no-wrap
 msgid "username"
-msgstr ""
+msgstr "Benutzername"
 
 #. type: OP
 #: ../adduser.local.8:12 ../adduser.local.8:17
-#, fuzzy, no-wrap
-#| msgid "id"
+#, no-wrap
 msgid "uid"
-msgstr "Kennung"
+msgstr "UID"
 
 #. type: OP
 #: ../adduser.local.8:13 ../adduser.local.8:18
-#, fuzzy, no-wrap
-#| msgid "id"
+#, no-wrap
 msgid "gid"
-msgstr "Kennung"
+msgstr "GID"
 
 #. type: OP
 #: ../adduser.local.8:14 ../adduser.local.8:19
-#, fuzzy, no-wrap
-#| msgid "username uid gid home-directory"
+#, no-wrap
 msgid "home-directory"
-msgstr "Benutzername, UID, GID und Home-Verzeichnis."
+msgstr "Home-Verzeichnis"
 
 #. type: SY
 #: ../adduser.local.8:15
-#, fuzzy, no-wrap
-#| msgid "deluser"
+#, no-wrap
 msgid "deluser.local"
-msgstr "deluser"
+msgstr "deluser.local"
 
+# FIXME B<adduser> → B<adduser>(8)
+# FIXME B<deluser> → B<deluser>(8)
 #. type: Plain text
 #: ../adduser.local.8:29
 msgid ""
@@ -2558,6 +2556,10 @@ msgid ""
 "I</usr/local/sbin> and will be called by B<adduser> and B<deluser> "
 "respectively in order to do locally relevant setup and cleanup actions."
 msgstr ""
+"B<adduser.local> und B<deluser.local> können vom lokalen Administrator in I</"
+"usr/local/sbin> abgelegt werden. Sie werden von B<adduser>(8) bzw. "
+"B<deluser>(8) aufgerufen, um lokal relevante Einrichtungs- und "
+"Aufräumaktionen durchzuführen."
 
 #. type: Plain text
 #: ../adduser.local.8:32
@@ -2565,6 +2567,8 @@ msgid ""
 "The hooks are called while the adduser/deluser lock is active.  They must "
 "therefore not call back to adduser/deluser themselves."
 msgstr ""
+"Die Einhängepunkte werden aufgerufen, während die Adduser/Deluser-Sperre "
+"aktiv ist. Sie dürfen daher nicht selbst an Adduser/Deluser zurückaufrufen."
 
 #. type: SH
 #: ../adduser.local.8:32
@@ -2575,70 +2579,64 @@ msgstr "RÜCKGABEWERT"
 #. type: Plain text
 #: ../adduser.local.8:34
 msgid "Return values from the hooks are ignored."
-msgstr ""
+msgstr "Die Rückgabewerte von den Einhängepunkten werden ignoriert."
 
 #. type: SH
 #: ../adduser.local.8:35
 #, no-wrap
 msgid "ENVIRONMENT"
-msgstr ""
+msgstr "UMGEBUNG"
 
 #. type: Plain text
 #: ../adduser.local.8:37
 msgid "B<VERBOSE>"
-msgstr ""
+msgstr "B<VERBOSE>"
 
 #. type: IP
 #: ../adduser.local.8:37
 #, no-wrap
 msgid "0"
-msgstr ""
+msgstr "0"
 
+# FIXME --quiet → B<--quiet>
 #. type: Plain text
 #: ../adduser.local.8:39
-#, fuzzy
-#| msgid "B<--quiet> is specified"
 msgid "if --quiet is specified"
-msgstr "B<--quiet> angegeben wurde"
+msgstr "falls B<--quiet> angegeben wurde"
 
 #. type: IP
 #: ../adduser.local.8:39
 #, no-wrap
 msgid "1"
-msgstr ""
+msgstr "1"
 
+# FIXME --quiet → B<--quiet>
+# FIXME --debug → B<--debug>
 #. type: Plain text
 #: ../adduser.local.8:41
-#, fuzzy
-#| msgid "B<--quiet> nor B<--debug> is specified"
 msgid "if neither --quiet nor --debug is specified"
-msgstr "B<--quiet> noch B<--debug> angegeben wurde"
+msgstr "falls weder B<--quiet> noch B<--debug> angegeben wurde"
 
 #. type: IP
 #: ../adduser.local.8:41
 #, no-wrap
 msgid "2"
-msgstr ""
+msgstr "2"
 
+# FIXME --debug → B<--debug>
 #. type: Plain text
 #: ../adduser.local.8:43
-#, fuzzy
-#| msgid "B<--debug> is specified"
 msgid "if --debug is specified"
-msgstr "B<--debug> angegeben wurde"
+msgstr "falls B<--debug> angegeben wurde"
 
 #. type: Plain text
 #: ../adduser.local.8:53
-#, fuzzy
-#| msgid ""
-#| "B<adduser>(8), B<deluser.conf>(5), B<deluser.local.conf>(8), "
-#| "B<groupdel>(8), B<userdel>(8)"
 msgid ""
 "B<adduser.conf>(5), B<deluser.conf>(5), B<adduser>(8), B<deluser>(8), "
 "B<groupadd>(8), B<useradd>(8), B<usermod>(8), Debian Policy 9.2.2."
 msgstr ""
-"B<adduser>(8), B<deluser.conf>(5), B<deluser.local.conf>(8), B<groupdel>(8), "
-"B<userdel>(8)"
+"B<adduser.conf>(5), B<deluser.conf>(5), B<adduser>(8), B<deluser>(8), "
+"B<groupadd>(8), B<useradd>(8), B<usermod>(8), Debian Richtlinie 9.2.2."
 
 #. type: TH
 #: ../deluser.8:13

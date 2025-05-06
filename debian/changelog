@@ -1,3 +1,28 @@
+adduser (3.152) unstable; urgency=medium
+
+  * only do very basic sanitization for comment.
+    Thanks to Pascal Hambourg, Luca Boccassi and others.
+    (Closes: #1104738, #1101678)
+  * work around #1104726 in perl
+
+ -- Marc Haber <mh+debian-packages@zugschlus.de>  Tue, 06 May 2025 20:25:46 +0200
+
+adduser (3.151) unstable; urgency=medium
+
+  * update Romanian manual page translation.
+    Thanks to Remus-Gabriel Chelu (Closes: #1101518)
+  * Update German manual page translation.
+    Thanks to Helge Kreutzmann (Closes: #1101523)
+  * fix commentre, it accidentally allowed "-_ (" to _)
+  * update Brazilian Portuguese program translation.
+    Thanks to Adriano Rafael Gomes (Closes: #1101702)
+  * Update portuguese man page translation.
+    Thanks to Américo Monteiro (Closes: #1103635)
+  * update dutch man page translation.
+    Thanks to Frans Spiesschaert (Closes: #1104314)
+
+ -- Marc Haber <mh+debian-packages@zugschlus.de>  Fri, 02 May 2025 14:39:56 +0200
+
 adduser (3.150) unstable; urgency=medium
 
   * unset $ENV{CDPATH}.

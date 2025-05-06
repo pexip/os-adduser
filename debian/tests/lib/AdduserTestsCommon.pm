@@ -387,7 +387,6 @@ sub assert_user_has_home_directory {
 
 sub assert_user_has_comment {
     my ($user, $comment) = @_;
-    $comment .= ',,,';
     is((egetpwnam($user))[6], $comment, "user has comment: ~$user is $comment");
 }
 
