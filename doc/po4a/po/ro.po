@@ -26,8 +26,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.146\n"
-"POT-Creation-Date: 2025-03-28 14:33+0100\n"
-"PO-Revision-Date: 2025-03-19 22:00+0100\n"
+"POT-Creation-Date: 2025-05-06 20:52+0200\n"
+"PO-Revision-Date: 2025-03-28 19:49+0100\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <debian-l10n-romanian@lists.debian.org>\n"
 "Language: ro\n"
@@ -2488,46 +2488,44 @@ msgstr ""
 msgid ""
 "adduser.local, deluser.local - hook for local actions in adduser and deluser"
 msgstr ""
+"adduser.local, deluser.local - cârlig pentru acțiuni locale în adduser și "
+"deluser"
 
 #. type: SY
 #: ../adduser.local.8:10
-#, fuzzy, no-wrap
-#| msgid "adduser"
+#, no-wrap
 msgid "adduser.local"
-msgstr "adduser"
+msgstr "adduser.local"
 
 #. type: OP
 #: ../adduser.local.8:11 ../adduser.local.8:16
 #, no-wrap
 msgid "username"
-msgstr ""
+msgstr "nume-utilizator"
 
 #. type: OP
 #: ../adduser.local.8:12 ../adduser.local.8:17
-#, fuzzy, no-wrap
-#| msgid "id"
+#, no-wrap
 msgid "uid"
-msgstr "id"
+msgstr "uid"
 
 #. type: OP
 #: ../adduser.local.8:13 ../adduser.local.8:18
-#, fuzzy, no-wrap
-#| msgid "id"
+#, no-wrap
 msgid "gid"
-msgstr "id"
+msgstr "gid"
 
 #. type: OP
 #: ../adduser.local.8:14 ../adduser.local.8:19
 #, no-wrap
 msgid "home-directory"
-msgstr ""
+msgstr "director-personal"
 
 #. type: SY
 #: ../adduser.local.8:15
-#, fuzzy, no-wrap
-#| msgid "deluser"
+#, no-wrap
 msgid "deluser.local"
-msgstr "deluser"
+msgstr "deluser.local"
 
 #. type: Plain text
 #: ../adduser.local.8:29
@@ -2536,6 +2534,10 @@ msgid ""
 "I</usr/local/sbin> and will be called by B<adduser> and B<deluser> "
 "respectively in order to do locally relevant setup and cleanup actions."
 msgstr ""
+"B<adduser.local> și B<deluser.local> pot fi plasate de administratorul local "
+"în I</usr/local/sbin> și vor fi apelate de B<adduser> și, respectiv, "
+"B<deluser> pentru a efectua acțiuni de configurare și curățare relevante la "
+"nivel local."
 
 #. type: Plain text
 #: ../adduser.local.8:32
@@ -2543,6 +2545,8 @@ msgid ""
 "The hooks are called while the adduser/deluser lock is active.  They must "
 "therefore not call back to adduser/deluser themselves."
 msgstr ""
+"Cârligele sunt apelate în timp ce blocajul adduser/deluser este activ. Prin "
+"urmare, acestea nu trebuie să apeleze ele însele la adduser/deluser."
 
 #. type: SH
 #: ../adduser.local.8:32
@@ -2553,64 +2557,61 @@ msgstr "VALOAREA RETURNATĂ"
 #. type: Plain text
 #: ../adduser.local.8:34
 msgid "Return values from the hooks are ignored."
-msgstr ""
+msgstr "Valorile returnate de către cârlige sunt ignorate."
 
 #. type: SH
 #: ../adduser.local.8:35
 #, no-wrap
 msgid "ENVIRONMENT"
-msgstr ""
+msgstr "MEDIU"
 
 #. type: Plain text
 #: ../adduser.local.8:37
 msgid "B<VERBOSE>"
-msgstr ""
+msgstr "B<VERBOSE>"
 
 #. type: IP
 #: ../adduser.local.8:37
 #, no-wrap
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. type: Plain text
 #: ../adduser.local.8:39
 msgid "if --quiet is specified"
-msgstr ""
+msgstr "dacă este specificată opțiunea „--quiet”"
 
 #. type: IP
 #: ../adduser.local.8:39
 #, no-wrap
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. type: Plain text
 #: ../adduser.local.8:41
 msgid "if neither --quiet nor --debug is specified"
 msgstr ""
+"dacă nu este specificată nici opțiunea „--quiet”, nici opțiunea „--debug”"
 
 #. type: IP
 #: ../adduser.local.8:41
 #, no-wrap
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. type: Plain text
 #: ../adduser.local.8:43
 msgid "if --debug is specified"
-msgstr ""
+msgstr "dacă este specificată opțiunea „--debug”"
 
 #. type: Plain text
 #: ../adduser.local.8:53
-#, fuzzy
-#| msgid ""
-#| "B<adduser.conf>(5), B<deluser>(8), B<groupadd>(8), B<useradd>(8), "
-#| "B<usermod>(8), Debian Policy 9.2.2."
 msgid ""
 "B<adduser.conf>(5), B<deluser.conf>(5), B<adduser>(8), B<deluser>(8), "
 "B<groupadd>(8), B<useradd>(8), B<usermod>(8), Debian Policy 9.2.2."
 msgstr ""
-"B<adduser.conf>(5), B<deluser>(8), B<groupadd>(8), B<useradd>(8), "
-"B<usermod>(8), Politica Debian 9.2.2."
+"B<adduser.conf>(5), B<deluser.conf>(5), B<adduser>(8), B<deluser>(8), "
+"B<groupadd>(8), B<useradd>(8), B<usermod>(8), Politica Debian 9.2.2."
 
 #. type: TH
 #: ../deluser.8:13

@@ -21,9 +21,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: adduser 3.146\n"
-"POT-Creation-Date: 2025-03-28 14:33+0100\n"
-"PO-Revision-Date: 2025-03-08 23:11+0100\n"
+"Project-Id-Version: adduser 3.150\n"
+"POT-Creation-Date: 2025-05-06 20:52+0200\n"
+"PO-Revision-Date: 2025-04-15 21:13+0200\n"
 "Last-Translator: Frans Spiesschaert <Frans.Spiesschaert@yucom.be>\n"
 "Language-Team: Debian Dutch l10n Team <debian-l10n-dutch@lists.debian.org>\n"
 "Language: nl\n"
@@ -591,6 +591,15 @@ msgid ""
 "package's maintainer scripts, you might want to issue an explicit recursive "
 "B<chown> for the home directory after the call to B<adduser>."
 msgstr ""
+"Als een persoonlijke map is opgegeven met de optie B<--home> en de map al "
+"bestaat (bijvoorbeeld als het pakket bestanden in die map bevat), stelt "
+"B<adduser> de eigenaar van de map niet stilzwijgend in op de nieuw "
+"aangemaakte gebruiker. Het instellen van de eigenaar zou een beslissing van "
+"de lokale beheerder kunnen overschrijven, en het melden van dit feit zou de "
+"stilte van B<adduser> tijdens de installatie van het pakket verbreken. Als u "
+"B<adduser --home> gebruikt in de onderhoudsscripts van uw pakket, kunt u na "
+"de aanroep van B<adduser> een expliciete recursieve B<chown> voor de "
+"persoonlijke map uitvoeren."
 
 #. type: Plain text
 #: ../adduser.8:261
@@ -2479,46 +2488,44 @@ msgstr ""
 msgid ""
 "adduser.local, deluser.local - hook for local actions in adduser and deluser"
 msgstr ""
+"adduser.local, deluser.local - uitbreiding (hook) voor lokale acties in "
+"adduser en deluser"
 
 #. type: SY
 #: ../adduser.local.8:10
-#, fuzzy, no-wrap
-#| msgid "adduser"
+#, no-wrap
 msgid "adduser.local"
-msgstr "adduser"
+msgstr "adduser.local"
 
 #. type: OP
 #: ../adduser.local.8:11 ../adduser.local.8:16
 #, no-wrap
 msgid "username"
-msgstr ""
+msgstr "gebruikersnaam"
 
 #. type: OP
 #: ../adduser.local.8:12 ../adduser.local.8:17
-#, fuzzy, no-wrap
-#| msgid "id"
+#, no-wrap
 msgid "uid"
-msgstr "id"
+msgstr "uid"
 
 #. type: OP
 #: ../adduser.local.8:13 ../adduser.local.8:18
-#, fuzzy, no-wrap
-#| msgid "id"
+#, no-wrap
 msgid "gid"
-msgstr "id"
+msgstr "gid"
 
 #. type: OP
 #: ../adduser.local.8:14 ../adduser.local.8:19
 #, no-wrap
 msgid "home-directory"
-msgstr ""
+msgstr "persoonlijke map"
 
 #. type: SY
 #: ../adduser.local.8:15
-#, fuzzy, no-wrap
-#| msgid "deluser"
+#, no-wrap
 msgid "deluser.local"
-msgstr "deluser"
+msgstr "deluser.local"
 
 #. type: Plain text
 #: ../adduser.local.8:29
@@ -2527,6 +2534,10 @@ msgid ""
 "I</usr/local/sbin> and will be called by B<adduser> and B<deluser> "
 "respectively in order to do locally relevant setup and cleanup actions."
 msgstr ""
+"B<adduser.local> en B<deluser.local> kunnen door de lokale beheerder in I</"
+"usr/local/sbin> worden geplaatst en zullen respectievelijk door B<adduser> "
+"en B<deluser> aangeroepen worden om lokaal relevante installatie- en "
+"opruimacties uit te voeren."
 
 #. type: Plain text
 #: ../adduser.local.8:32
@@ -2534,75 +2545,73 @@ msgid ""
 "The hooks are called while the adduser/deluser lock is active.  They must "
 "therefore not call back to adduser/deluser themselves."
 msgstr ""
+"De uitbreidingen (hooks) worden aangeroepen terwijl de vergrendeling van "
+"adduser/deluser actief is. Ze mogen dus niet zelf adduser/deluser terug "
+"aanroepen."
 
 #. type: SH
 #: ../adduser.local.8:32
-#, fuzzy, no-wrap
-#| msgid "EXIT VALUES"
+#, no-wrap
 msgid "RETURN VALUE"
-msgstr "AFSLUITWAARDEN"
+msgstr "TERUGGEZONDEN WAARDE"
 
 #. type: Plain text
 #: ../adduser.local.8:34
 msgid "Return values from the hooks are ignored."
-msgstr ""
+msgstr "Door de uitbreidingen (hooks) teruggezonden waarden worden genegeerd."
 
 #. type: SH
 #: ../adduser.local.8:35
 #, no-wrap
 msgid "ENVIRONMENT"
-msgstr ""
+msgstr "OMGEVING"
 
 #. type: Plain text
 #: ../adduser.local.8:37
 msgid "B<VERBOSE>"
-msgstr ""
+msgstr "B<VERBOSE>"
 
 #. type: IP
 #: ../adduser.local.8:37
 #, no-wrap
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. type: Plain text
 #: ../adduser.local.8:39
 msgid "if --quiet is specified"
-msgstr ""
+msgstr "als --quiet werd opgegeven"
 
 #. type: IP
 #: ../adduser.local.8:39
 #, no-wrap
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #. type: Plain text
 #: ../adduser.local.8:41
 msgid "if neither --quiet nor --debug is specified"
-msgstr ""
+msgstr "als noch --quiet noch --debug werd opgegeven"
 
 #. type: IP
 #: ../adduser.local.8:41
 #, no-wrap
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #. type: Plain text
 #: ../adduser.local.8:43
 msgid "if --debug is specified"
-msgstr ""
+msgstr "als --debug werd opgegeven"
 
 #. type: Plain text
 #: ../adduser.local.8:53
-#, fuzzy
-#| msgid ""
-#| "B<adduser>(8), B<deluser.conf>(5), B<deluser.local.conf>(8), "
-#| "B<groupdel>(8), B<userdel>(8)"
 msgid ""
 "B<adduser.conf>(5), B<deluser.conf>(5), B<adduser>(8), B<deluser>(8), "
 "B<groupadd>(8), B<useradd>(8), B<usermod>(8), Debian Policy 9.2.2."
 msgstr ""
-"B<adduser>(8), B<deluser.conf>(5), B<deluser.local.conf>(8), B<groupdel>(8), "
-"B<userdel>(8)"
+"B<adduser.conf>(5), B<deluser.conf>(5), B<adduser>(8), B<deluser>(8), "
+"B<groupadd>(8), B<useradd>(8), B<usermod>(8), Debian Beleidslijnen 9.2.2."
 
 #. type: TH
 #: ../deluser.8:13

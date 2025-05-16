@@ -163,6 +163,13 @@ sub check_user_homedir_eq {
   return ($userdir eq $dir) ? 0 : 1;
 }
 
+sub check_user_comment {
+  my ($username, $comment) = @_;
+  my $usercomment = (getpwnam($username))[6];
+
+  return ($usercomment eq $comment) ? 0 : 1;
+}
+
 sub check_user_homedir_not_exist {
   my ($username) = @_;
   my $dir = (getpwnam($username))[7];

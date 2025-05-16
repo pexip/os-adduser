@@ -42,7 +42,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.146\n"
-"POT-Creation-Date: 2025-03-28 14:33+0100\n"
+"POT-Creation-Date: 2025-05-06 20:52+0200\n"
 "PO-Revision-Date: 2011-07-16 16:59+0200\n"
 "Last-Translator: Omar Campagne <ocampagne@gmail.com>\n"
 "Language-Team: Debian l10n Spanish <debian-l10n-spanish@lists.debian.org>\n"

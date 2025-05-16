@@ -22,7 +22,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: adduser 3.146\n"
-"POT-Creation-Date: 2025-03-28 14:33+0100\n"
+"POT-Creation-Date: 2025-05-06 20:52+0200\n"
 "PO-Revision-Date: 2010-11-12 18:06+0100\n"
 "Last-Translator: Martin Bagge / brother <brother@bsnet.se>\n"
 "Language-Team: Swedish <debian-l10n-swedihs@lists.debian.org>\n"

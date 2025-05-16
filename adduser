@@ -117,7 +117,7 @@ our $found_sys_opt = undef;
 our $ingroup_name = undef;
 our $new_firstgid = undef;
 our $new_firstuid = undef;
-our $new_comment = undef;
+our $comment_tainted = undef;
 our $gid_option = undef;
 our $primary_gid = undef;
 our $new_lastgid = undef;
@@ -160,7 +160,7 @@ GetOptions(
     'allow-all-names' => sub { $name_check_level = 2 },
     'allow-badname' => sub { $name_check_level = 1 unless $name_check_level },
     'allow-bad-names' => sub { $name_check_level = 1 unless $name_check_level },
-    'comment:s' => \$new_comment,
+    'comment:s' => \$comment_tainted,
     'conf|c=s' => \@configfiles,
     'debug' => sub { $verbose = 2; },
     'stdoutmsglevel=s' => \$stdoutmsglevel,
@@ -171,7 +171,7 @@ GetOptions(
     'firstgid=i' => \$new_firstgid,
     'firstuid=i' => \$new_firstuid,
     'force-badname' => sub { $name_check_level = 1 unless $name_check_level },
-    'gecos:s' => \$new_comment,
+    'gecos:s' => \$comment_tainted,
     'gid=i' => \$gid_option,
     'group' => \$found_group_opt,
     'help|h' => sub { &usage; exit 0; },
@@ -357,14 +357,16 @@ if( defined $special_home ) {
     $special_home = sanitize_string( decode($charset, $special_home), simplepathre);
 }
 
+if ( defined $comment_tainted ) {
+    log_trace("check comment %s for unwanted chars", $special_home);
+    # do not sanitize, can't be done without libperl
+    if ( $comment_tainted !~ qr/^([^\x00-\x1F\x7F:]*)$/ ) {
+        die( "unwanted chars in comment" );
+    }
+}
 if( defined $special_shell ) {
     log_trace("sanitize special_shell");
     $special_shell = sanitize_string( decode($charset, $special_shell), simplepathre);
-}
-
-if( defined $new_comment ) {
-    log_trace("sanitize new_comment");
-    $new_comment = sanitize_string( decode($charset, $new_comment), commentre);
 }
 
 if( defined $new_firstgid ) {
@@ -412,7 +414,7 @@ $SIG{'INT'} = $SIG{'QUIT'} = $SIG{'HUP'} = 'handler';
 # $action = "adduser"
 #    $new_name                - the name of the new user.
 #    $ingroup_name | $gid_option - the group to add the user to
-#    $special_home, $new_uid, $new_comment - optional overrides
+#    $special_home, $new_uid, $comment_tainted - optional overrides
 # $action = "addgroup"
 #    $new_name                - the name of the new group
 #    $gid_option                 - optional override
@@ -422,7 +424,7 @@ $SIG{'INT'} = $SIG{'QUIT'} = $SIG{'HUP'} = 'handler';
 # $action = "addsysuser"
 #    $new_name                - the name of the new user
 #    $make_group_also | $ingroup_name | $gid_option | 0  - which group
-#    $special_home, $new_uid, $new_comment - optional overrides
+#    $special_home, $new_uid, $comment_tainted - optional overrides
 # $action = "addusertogroup"
 #    $existing_user           - the user to be added
 #    $existing_group          - the group to add her to
@@ -678,10 +680,10 @@ if ($action eq "addsysuser") {
 
     release_lock(0);
 
-    if (defined($new_comment)) {
-        ch_comment($new_comment);
+    if (defined($comment_tainted)) {
+        ch_comment($new_name, $comment_tainted);
     } elsif ($uid_pool{$new_name}{'comment'}) {
-        ch_comment($uid_pool{$new_name}{'comment'});
+        ch_comment($new_name, $uid_pool{$new_name}{'comment'});
     }
 
     $primary_gid = $gid_option;
@@ -972,10 +974,10 @@ if ($action eq "adduser") {
         }
     }
 
-    if (defined($new_comment)) {
-        ch_comment($new_comment);
+    if (defined($comment_tainted)) {
+        ch_comment($new_name, $comment_tainted);
     } elsif ($uid_pool{$new_name}{'comment'}) {
-        ch_comment($uid_pool{$new_name}{'comment'});
+        ch_comment($new_name, $uid_pool{$new_name}{'comment'});
     } else {
         my $noexpr = langinfo(NOEXPR());
         my $yesexpr = langinfo(YESEXPR());
@@ -1480,21 +1482,15 @@ sub first_avail_uid_gid {
 }
 
 sub ch_comment {
-    my $chfn = &which('chfn');
-    my $comment = shift;
-    if($comment =~ /,/) {
-        my($comment_name,$comment_room,$comment_work,$comment_home,$comment_other)
-          = split(/,/,$comment);
- 
-        systemcall($chfn, '-f', $comment_name, '-r', $comment_room, $new_name);
-        systemcall($chfn,'-w',$comment_work,$new_name)
-          if(defined($comment_work));
-        systemcall($chfn,'-h',$comment_home,$new_name)
-          if(defined($comment_home));
-        systemcall($chfn,'-o',$comment_other,$new_name)
-          if(defined($comment_other));
+    my ($name, $comment) = @_;
+    my $usermod = &which('usermod');
+
+    # untaint unconditionally. our call to system() is safe, so
+    # we leave the check to usermod
+    if ($comment =~ qr/^([^\x00-\x1F\x7F:]*)$/ ) {
+        systemcall($usermod, '-c', $1, $name);
     } else {
-        systemcall($chfn, '-f', $comment, $new_name);
+        log_fatal("unconditional sanitize of comment failed. This should not happen.");
     }
 }
 

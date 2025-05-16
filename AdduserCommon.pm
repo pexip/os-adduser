@@ -84,7 +84,7 @@ use constant {
     simplefilenamere => qr/[-_\.0-9a-zA-Z]+/,
     pathre => qr/[- \p{Graph}_\.+!\$%&()\]\[;0-9a-zA-Z\/{}>*'@]+/,
     simplepathre => qr/[-_\$\.0-9a-zA-Z\/]+/,
-    commentre => qr/["-_\.+!\$%&()\]\[;0-9a-zA-Z\/ ]*/,
+    commentre => qr/[-"_\.+!\$%&()\]\[;\/'’ A-Za-z0-9ß\x{a1}-\x{ac}\x{ae}-\x{ff}\p{L}\p{Nd}\p{Zs}]*/,
     numberre => qr/[0-9]+/,
     namere => qr/^([^-+~:,\s\/][^:,\s\/]*)$/aa,
     anynamere => qr/^([^-+~:,\s\/][^:,\s\/]*)$/aa,
@@ -138,7 +138,9 @@ sub sanitize_string {
         log_trace("sanitize_string returning %s", "$1");
         return $1;  # $1 is the captured, untainted portion of the string.
     } else {
-        die "invalid characters in $input";
+        #die "invalid characters in $input";
+        # this sometimes hangs the perl interpreter, see #1104726
+        die "invalid characters in input string, see trace output for more details";
     }
 }
 
